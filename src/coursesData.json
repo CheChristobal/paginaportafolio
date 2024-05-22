@@ -1,0 +1,1648 @@
+[
+  {
+    "id": 1,
+    "title": "Curso de Python",
+    "challenges": [
+      {
+        "id": 1,
+        "title": "Desafío 1 de Python",
+        "description": "Escribe un programa que imprima '¡Hola, mundo!' en la consola.",
+        "code": "print(\"¡Hola, mundo!\")"
+      },
+      {
+        "id": 2,
+        "title": "Desafío 2 de Python",
+        "description": "Escribe una función que sume dos números y devuelva el resultado.",
+        "code": "def suma(a, b):\n    return a + b"
+      },
+      {
+        "id": 3,
+        "title": "Desafío 3 de Python",
+        "description": "Escribe una función que calcule el factorial de un número de forma recursiva.",
+        "code": "def factorial(n):\n    if n == 0:\n        return 1\n    else:\n        return n * factorial(n-1)"
+      },
+      {
+        "id": 4,
+        "title": "Desafío 4 de Python",
+        "description": "Escribe una función que calcule la potencia de un número.",
+        "code": "def potencia(base, exponente):\n    return base ** exponente"
+      },
+      {
+        "id": 5,
+        "title": "Desafío 5 de Python",
+        "description": "Escribe un programa que genere la serie de Fibonacci hasta un número dado.",
+        "code": "def fibonacci(n):\n    fib = [0, 1]\n    for i in range(2, n):\n        fib.append(fib[-1] + fib[-2])\n    return fib"
+      },
+      {
+        "id": 6,
+        "title": "Desafío 6 de Python",
+        "description": "Escribe una función que calcule el máximo común divisor (MCD) de dos números.",
+        "code": "def mcd(a, b):\n    while b:\n        a, b = b, a % b\n    return a"
+      },
+      {
+        "id": 7,
+        "title": "Desafío 7 de Python",
+        "description": "Escribe una función que verifique si un número es primo.",
+        "code": "def es_primo(n):\n    if n <= 1:\n        return False\n    elif n <= 3:\n        return True\n    elif n % 2 == 0 or n % 3 == 0:\n        return False\n    i = 5\n    while i * i <= n:\n        if n % i == 0 or n % (i + 2) == 0:\n            return False\n        i += 6\n    return True"
+      },
+      {
+        "id": 8,
+        "title": "Desafío 8 de Python",
+        "description": "Escribe una función que ordene una lista de números usando el método de la burbuja.",
+        "code": "def bubble_sort(arr):\n    n = len(arr)\n    for i in range(n - 1):\n        for j in range(0, n - i - 1):\n            if arr[j] > arr[j + 1]:\n                arr[j], arr[j + 1] = arr[j + 1], arr[j]\n    return arr"
+      },
+      {
+        "id": 9,
+        "title": "Desafío 9 de Python",
+        "description": "Escribe una función que cuente el número de vocales en una cadena.",
+        "code": "def contar_vocales(cadena):\n    vocales = 'aeiouAEIOU'\n    return sum(1 for char in cadena if char in vocales)"
+      },
+      {
+        "id": 10,
+        "title": "Desafío 10 de Python",
+        "description": "Escribe una función que convierta una cadena a su forma capitalizada.",
+        "code": "def capitalizar(cadena):\n    return cadena.capitalize()"
+      },
+      {
+        "id": 11,
+        "title": "Desafío 11 de Python",
+        "description": "Escribe una función que determine si una cadena es un palíndromo.",
+        "code": "def es_palindromo(cadena):\n    return cadena == cadena[::-1]"
+      },
+      {
+        "id": 12,
+        "title": "Desafío 12 de Python",
+        "description": "Escribe una función que encuentre todos los números primos hasta un número dado.",
+        "code": "def encontrar_primos(n):\n    primos = []\n    for num in range(2, n + 1):\n        if all(num % i != 0 for i in range(2, int(num**0.5) + 1)):\n            primos.append(num)\n    return primos"
+      },
+      {
+        "id": 13,
+        "title": "Desafío 13 de Python",
+        "description": "Escribe una función que convierta una lista de cadenas en una sola cadena separada por comas.",
+        "code": "def unir_cadenas(lista):\n    return ', '.join(lista)"
+      },
+      {
+        "id": 14,
+        "title": "Desafío 14 de Python",
+        "description": "Escribe una función que encuentre el segundo elemento más grande en una lista.",
+        "code": "def segundo_mas_grande(lista):\n    return sorted(set(lista))[-2]"
+      },
+      {
+        "id": 15,
+        "title": "Desafío 15 de Python",
+        "description": "Escribe una función que cuente el número de palabras en una frase.",
+        "code": "def contar_palabras(frase):\n    return len(frase.split())"
+      },
+      {
+        "id": 16,
+        "title": "Desafío 16 de Python",
+        "description": "Escribe una función que invierta el orden de las palabras en una frase.",
+        "code": "def invertir_palabras(frase):\n    return ' '.join(frase.split()[::-1])"
+      },
+      {
+        "id": 17,
+        "title": "Desafío 17 de Python",
+        "description": "Escribe una función que calcule la suma de todos los dígitos de un número entero.",
+        "code": "def suma_digitos(numero):\n    return sum(int(digito) for digito in str(numero))"
+      },
+      {
+        "id": 18,
+        "title": "Desafío 18 de Python",
+        "description": "Escribe una función que elimine los elementos duplicados de una lista.",
+        "code": "def eliminar_duplicados(lista):\n    return list(set(lista))"
+      },
+      {
+        "id": 19,
+        "title": "Desafío 19 de Python",
+        "description": "Escribe una función que determine si dos cadenas son anagramas.",
+        "code": "def son_anagramas(cadena1, cadena2):\n    return sorted(cadena1) == sorted(cadena2)"
+      },
+      {
+        "id": 20,
+        "title": "Desafío 20 de Python",
+        "description": "Escribe una función que devuelva el día de la semana correspondiente a una fecha dada.",
+        "code": "import datetime\n\ndef dia_semana(fecha):\n    dias_semana = ['Lunes', 'Martes', 'Miércoles', 'Jueves', 'Viernes', 'Sábado', 'Domingo']\n    return dias_semana[fecha.weekday()]"
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "title": "Curso de JavaScript",
+    "challenges": [
+      {
+        "id": 1,
+        "title": "Desafío 1 de JavaScript",
+        "description": "Escribe un programa que imprima '¡Hola, mundo!' en la consola.",
+        "code": "console.log(\"¡Hola, mundo!\");"
+      },
+      {
+        "id": 2,
+        "title": "Desafío 2 de JavaScript",
+        "description": "Escribe una función que sume dos números y devuelva el resultado.",
+        "code": "function sum(a, b) {\n    return a + b;\n}"
+      },
+      {
+        "id": 3,
+        "title": "Desafío 3 de JavaScript",
+        "description": "Escribe una función que calcule el factorial de un número de forma recursiva.",
+        "code": "function factorial(n) {\n    if (n === 0) {\n        return 1;\n    }\n    return n * factorial(n - 1);\n}"
+      },
+      {
+        "id": 4,
+        "title": "Desafío 4 de JavaScript",
+        "description": "Escribe una función que determine si un número es par o impar.",
+        "code": "function esPar(numero) {\n    return numero % 2 === 0;\n}"
+      },
+      {
+        "id": 5,
+        "title": "Desafío 5 de JavaScript",
+        "description": "Escribe una función que encuentre el máximo de dos números.",
+        "code": "function maximo(a, b) {\n    return Math.max(a, b);\n}"
+      },
+      {
+        "id": 6,
+        "title": "Desafío 6 de JavaScript",
+        "description": "Escribe una función que convierta grados Celsius a Fahrenheit.",
+        "code": "function celsiusToFahrenheit(celsius) {\n    return celsius * 9 / 5 + 32;\n}"
+      },
+      {
+        "id": 7,
+        "title": "Desafío 7 de JavaScript",
+        "description": "Escribe una función que calcule el área de un triángulo.",
+        "code": "function areaTriangulo(base, altura) {\n    return base * altura / 2;\n}"
+      },
+      {
+        "id": 8,
+        "title": "Desafío 8 de JavaScript",
+        "description": "Escribe una función que verifique si una palabra es un palíndromo.",
+        "code": "function esPalindromo(palabra) {\n    return palabra.toLowerCase() === palabra.toLowerCase().split('').reverse().join('');\n}"
+      },
+      {
+        "id": 9,
+        "title": "Desafío 9 de JavaScript",
+        "description": "Escribe una función que encuentre el factorial de un número.",
+        "code": "function factorial(n) {\n    if (n === 0 || n === 1) {\n        return 1;\n    }\n    return n * factorial(n - 1);\n}"
+      },
+      {
+        "id": 10,
+        "title": "Desafío 10 de JavaScript",
+        "description": "Escribe una función que cuente el número de vocales en una cadena.",
+        "code": "function contarVocales(cadena) {\n    const vocales = ['a', 'e', 'i', 'o', 'u'];\n    let contador = 0;\n    for (let letra of cadena.toLowerCase()) {\n        if (vocales.includes(letra)) {\n            contador++;\n        }\n    }\n    return contador;\n}"
+      },
+      {
+        "id": 11,
+        "title": "Desafío 11 de JavaScript",
+        "description": "Escribe una función que genere un número aleatorio entre un rango dado.",
+        "code": "function generarNumeroAleatorio(min, max) {\n    return Math.floor(Math.random() * (max - min + 1)) + min;\n}"
+      },
+      {
+        "id": 12,
+        "title": "Desafío 12 de JavaScript",
+        "description": "Escribe una función que convierta un número binario a decimal.",
+        "code": "function binarioToDecimal(binario) {\n    return parseInt(binario, 2);\n}"
+      },
+      {
+        "id": 13,
+        "title": "Desafío 13 de JavaScript",
+        "description": "Escribe una función que ordene un arreglo de números de forma ascendente.",
+        "code": "function ordenarAscendente(numeros) {\n    return numeros.sort((a, b) => a - b);\n}"
+      },
+      {
+        "id": 14,
+        "title": "Desafío 14 de JavaScript",
+        "description": "Escribe una función que encuentre el elemento más frecuente en un arreglo.",
+        "code": "function elementoMasFrecuente(arreglo) {\n    const frecuencias = {};\n    let maxFrecuencia = 0;\n    let elementoMasFrecuente;\n    for (let elemento of arreglo) {\n        frecuencias[elemento] = (frecuencias[elemento] || 0) + 1;\n        if (frecuencias[elemento] > maxFrecuencia) {\n            maxFrecuencia = frecuencias[elemento];\n            elementoMasFrecuente = elemento;\n        }\n    }\n    return elementoMasFrecuente;\n}"
+      },
+      {
+        "id": 15,
+        "title": "Desafío 15 de JavaScript",
+        "description": "Escribe una función que determine si un número es primo.",
+        "code": "function esPrimo(numero) {\n    if (numero <= 1) {\n        return false;\n    }\n    for (let i = 2; i <= Math.sqrt(numero); i++) {\n        if (numero % i === 0) {\n            return false;\n        }\n    }\n    return true;\n}"
+      },
+      {
+        "id": 16,
+        "title": "Desafío 16 de JavaScript",
+        "description": "Escribe una función que sume todos los elementos de un arreglo.",
+        "code": "function sumarArreglo(arreglo) {\n    return arreglo.reduce((total, elemento) => total + elemento, 0);\n}"
+      },
+      {
+        "id": 17,
+        "title": "Desafío 17 de JavaScript",
+        "description": "Escribe una función que encuentre la mediana de un conjunto de números.",
+        "code": "function mediana(numeros) {\n    const sorted = numeros.sort((a, b) => a - b);\n    const mitad = Math.floor(sorted.length / 2);\n    if (sorted.length % 2 === 0) {\n        return (sorted[mitad - 1] + sorted[mitad]) / 2;\n    } else {\n        return sorted[mitad];\n    }\n}"
+      },
+      {
+        "id": 18,
+        "title": "Desafío 18 de JavaScript",
+        "description": "Escribe una función que encuentre el número más grande en un arreglo.",
+        "code": "function maximoArreglo(arreglo) {\n    return Math.max(...arreglo);\n}"
+      },
+      {
+        "id": 19,
+        "title": "Desafío 19 de JavaScript",
+        "description": "Escribe una función que calcule el área de un círculo.",
+        "code": "function areaCirculo(radio) {\n    return Math.PI * radio ** 2;\n}"
+      },
+      {
+        "id": 20,
+        "title": "Desafío 20 de JavaScript",
+        "description": "Escribe una función que determine si una cadena es un pangrama.",
+        "code": "function esPangrama(cadena) {\n    const letras = 'abcdefghijklmnopqrstuvwxyz';\n    for (let letra of letras) {\n        if (!cadena.toLowerCase().includes(letra)) {\n            return false;\n        }\n    }\n    return true;\n}"
+      }
+  
+    ]
+    
+  },
+  {
+    "id": 3,
+    "title": "Curso de Dart",
+    "challenges": [
+      {
+        "id": 1,
+        "title": "Desafío 1 de Dart",
+        "description": "Escribe un programa que imprima '¡Hola, mundo!' en la consola.",
+        "code": "void main() {\n  print('¡Hola, mundo!');\n}"
+      },
+      {
+        "id": 2,
+        "title": "Desafío 2 de Dart",
+        "description": "Escribe una función que sume dos números y devuelva el resultado.",
+        "code": "int sum(int a, int b) {\n  return a + b;\n}"
+      },
+      {
+        "id": 3,
+        "title": "Desafío 3 de Dart",
+        "description": "Escribe una función que calcule el factorial de un número de forma recursiva.",
+        "code": "int factorial(int n) {\n  if (n == 0) {\n    return 1;\n  } else {\n    return n * factorial(n - 1);\n  }\n}"
+      },
+      {
+        "id": 4,
+        "title": "Desafío 4 de Dart",
+        "description": "Escribe una función que determine si un número es par o impar.",
+        "code": "bool esPar(int numero) {\n  return numero % 2 == 0;\n}"
+      },
+      {
+        "id": 5,
+        "title": "Desafío 5 de Dart",
+        "description": "Escribe una función que encuentre el máximo de dos números.",
+        "code": "int maximo(int a, int b) {\n  return a > b ? a : b;\n}"
+      },
+      {
+        "id": 6,
+        "title": "Desafío 6 de Dart",
+        "description": "Escribe una función que convierta grados Celsius a Fahrenheit.",
+        "code": "double celsiusToFahrenheit(double celsius) {\n  return celsius * 9 / 5 + 32;\n}"
+      },
+      {
+        "id": 7,
+        "title": "Desafío 7 de Dart",
+        "description": "Escribe una función que calcule el área de un triángulo.",
+        "code": "double areaTriangulo(double base, double altura) {\n  return base * altura / 2;\n}"
+      },
+      {
+        "id": 8,
+        "title": "Desafío 8 de Dart",
+        "description": "Escribe una función que verifique si una palabra es un palíndromo.",
+        "code": "bool esPalindromo(String palabra) {\n  return palabra.toLowerCase() == palabra.toLowerCase().split('').reversed.join('');\n}"
+      },
+      {
+        "id": 9,
+        "title": "Desafío 9 de Dart",
+        "description": "Escribe una función que encuentre el factorial de un número.",
+        "code": "int factorial(int n) {\n  if (n == 0) {\n    return 1;\n  } else {\n    return n * factorial(n - 1);\n  }\n}"
+      },
+      {
+        "id": 10,
+        "title": "Desafío 10 de Dart",
+        "description": "Escribe una función que cuente el número de vocales en una cadena.",
+        "code": "int contarVocales(String cadena) {\n  final expresionRegular = RegExp('[aeiouAEIOU]');\n  return expresionRegular.allMatches(cadena).length;\n}"
+      },
+      {
+        "id": 11,
+        "title": "Desafío 11 de Dart",
+        "description": "Escribe una función que genere un número aleatorio entre un rango dado.",
+        "code": "import 'dart:math';\n\nint generarNumeroAleatorio(int min, int max) {\n  return Random().nextInt(max - min + 1) + min;\n}"
+      },
+      {
+        "id": 12,
+        "title": "Desafío 12 de Dart",
+        "description": "Escribe una función que convierta un número binario a decimal.",
+        "code": "int binarioToDecimal(String binario) {\n  return int.parse(binario, radix: 2);\n}"
+      },
+      {
+        "id": 13,
+        "title": "Desafío 13 de Dart",
+        "description": "Escribe una función que ordene un arreglo de números de forma ascendente.",
+        "code": "List<int> ordenarAscendente(List<int> numeros) {\n  numeros.sort();\n  return numeros;\n}"
+      },
+      {
+        "id": 14,
+        "title": "Desafío 14 de Dart",
+        "description": "Escribe una función que encuentre el elemento más frecuente en un arreglo.",
+        "code": "int elementoMasFrecuente(List<int> arreglo) {\n  final conteo = <int, int>{};\n  int maxFrecuencia = 0;\n  int elementoMasFrecuente;\n  for (int elemento in arreglo) {\n    conteo[elemento] = (conteo[elemento] ?? 0) + 1;\n    if (conteo[elemento]! > maxFrecuencia) {\n      maxFrecuencia = conteo[elemento]!;\n      elementoMasFrecuente = elemento;\n    }\n  }\n  return elementoMasFrecuente!;\n}"
+      },
+      {
+        "id": 15,
+        "title": "Desafío 15 de Dart",
+        "description": "Escribe una función que determine si un número es primo.",
+        "code": "bool esPrimo(int numero) {\n  if (numero <= 1) {\n    return false;\n  }\n  for (int i = 2; i <= numero / 2; i++) {\n    if (numero % i == 0) {\n      return false;\n    }\n  }\n  return true;\n}"
+      },
+      {
+        "id": 16,
+        "title": "Desafío 16 de Dart",
+        "description": "Escribe una función que sume todos los elementos de un arreglo.",
+        "code": "int sumarArreglo(List<int> arreglo) {\n  return arreglo.reduce((total, elemento) => total + elemento, 0);\n}"
+      },
+      {
+        "id": 17,
+        "title": "Desafío 17 de Dart",
+        "description": "Escribe una función que encuentre la mediana de un conjunto de números.",
+        "code": "double mediana(List<int> numeros) {\n  final sorted = numeros..sort();\n  final mitad = sorted.length ~/ 2;\n  if (sorted.length % 2 == 0) {\n    return (sorted[mitad - 1] + sorted[mitad]) / 2;\n  } else {\n    return sorted[mitad];\n  }\n}"
+      },
+      {
+        "id": 18,
+        "title": "Desafío 18 de Dart",
+        "description": "Escribe una función que encuentre el número más grande en un arreglo.",
+        "code": "int maximoArreglo(List<int> arreglo) {\n  return arreglo.reduce((max, numero) => max > numero ? max : numero);\n}"
+      },
+      {
+        "id": 19,
+        "title": "Desafío 19 de Dart",
+        "description": "Escribe una función que calcule el área de un círculo.",
+        "code": "double areaCirculo(double radio) {\n  return pi * radio * radio;\n}"
+      },
+      {
+        "id": 20,
+        "title": "Desafío 20 de Dart",
+        "description": "Escribe una función que determine si una cadena es un pangrama.",
+        "code": "bool esPangrama(String cadena) {\n  final letras = 'abcdefghijklmnopqrstuvwxyz';\n  for (var letra in letras.split('')) {\n    if (!cadena.toLowerCase().contains(letra)) {\n      return false;\n    }\n  }\n  return true;\n}"
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "title": "Curso de C#",
+    "challenges": [
+      {
+        "id": 1,
+        "title": "Desafío 1 de C#",
+        "description": "Escribe un programa que imprima '¡Hola, mundo!' en la consola.",
+        "code": "using System;\n\nclass Program {\n    static void Main(string[] args) {\n        Console.WriteLine(\"¡Hola, mundo!\");\n    }\n}"
+      },
+      {
+        "id": 2,
+        "title": "Desafío 2 de C#",
+        "description": "Escribe una función que sume dos números y devuelva el resultado.",
+        "code": "using System;\n\nclass Program {\n    static int Suma(int a, int b) {\n        return a + b;\n    }\n\n    static void Main(string[] args) {\n        int resultado = Suma(5, 3);\n        Console.WriteLine(resultado);\n    }\n}"
+      },
+      {
+        "id": 3,
+        "title": "Desafío 3 de C#",
+        "description": "Escribe una función que calcule el factorial de un número de forma recursiva.",
+        "code": "using System;\n\nclass Program {\n    static int Factorial(int n) {\n        if (n == 0) {\n            return 1;\n        } else {\n            return n * Factorial(n - 1);\n        }\n    }\n\n    static void Main(string[] args) {\n        int resultado = Factorial(5);\n        Console.WriteLine(resultado);\n    }\n}"
+      },
+      {
+        "id": 4,
+        "title": "Desafío 4 de C#",
+        "description": "Escribe una función que determine si un número es par o impar.",
+        "code": "using System;\n\nclass Program {\n    static bool EsPar(int numero) {\n        return numero % 2 == 0;\n    }\n\n    static void Main(string[] args) {\n        bool resultado = EsPar(5);\n        Console.WriteLine(resultado);\n    }\n}"
+      },
+      {
+        "id": 5,
+        "title": "Desafío 5 de C#",
+        "description": "Escribe una función que encuentre el máximo de dos números.",
+        "code": "using System;\n\nclass Program {\n    static int Maximo(int a, int b) {\n        return a > b ? a : b;\n    }\n\n    static void Main(string[] args) {\n        int resultado = Maximo(5, 10);\n        Console.WriteLine(resultado);\n    }\n}"
+      },
+      {
+        "id": 6,
+        "title": "Desafío 6 de C#",
+        "description": "Escribe una función que convierta grados Celsius a Fahrenheit.",
+        "code": "using System;\n\nclass Program {\n    static double CelsiusToFahrenheit(double celsius) {\n        return celsius * 9 / 5 + 32;\n    }\n\n    static void Main(string[] args) {\n        double resultado = CelsiusToFahrenheit(25);\n        Console.WriteLine(resultado);\n    }\n}"
+      },
+      {
+        "id": 7,
+        "title": "Desafío 7 de C#",
+        "description": "Escribe una función que calcule el área de un triángulo.",
+        "code": "using System;\n\nclass Program {\n    static double AreaTriangulo(double baseTriangulo, double altura) {\n        return baseTriangulo * altura / 2;\n    }\n\n    static void Main(string[] args) {\n        double resultado = AreaTriangulo(5, 6);\n        Console.WriteLine(resultado);\n    }\n}"
+      },
+      {
+        "id": 8,
+        "title": "Desafío 8 de C#",
+        "description": "Escribe una función que verifique si una palabra es un palíndromo.",
+        "code": "using System;\n\nclass Program {\n    static bool EsPalindromo(string palabra) {\n        string reversa = \"\";\n        for (int i = palabra.Length - 1; i >= 0; i--) {\n            reversa += palabra[i];\n        }\n        return palabra.ToLower() == reversa.ToLower();\n    }\n\n    static void Main(string[] args) {\n        bool resultado = EsPalindromo(\"reconocer\");\n        Console.WriteLine(resultado);\n    }\n}"
+      },
+      {
+        "id": 9,
+        "title": "Desafío 9 de C#",
+        "description": "Escribe una función que encuentre el factorial de un número.",
+        "code": "using System;\n\nclass Program {\n    static int Factorial(int n) {\n        if (n == 0) {\n            return 1;\n        } else {\n            return n * Factorial(n - 1);\n        }\n    }\n\n    static void Main(string[] args) {\n        int resultado = Factorial(5);\n        Console.WriteLine(resultado);\n    }\n}"
+      },
+      {
+        "id": 10,
+        "title": "Desafío 10 de C#",
+        "description": "Escribe una función que cuente el número de vocales en una cadena.",
+        "code": "using System;\n\nclass Program {\n    static int ContarVocales(string cadena) {\n        int contador = 0;\n        string vocales = \"aeiouAEIOU\";\n        foreach (char caracter in cadena) {\n            if (vocales.Contains(caracter)) {\n                contador++;\n            }\n        }\n        return contador;\n    }\n\n    static void Main(string[] args) {\n        int resultado = ContarVocales(\"Murcielago\");\n        Console.WriteLine(resultado);\n    }\n}"
+      },
+      {
+        "id": 11,
+        "title": "Desafío 11 de C#",
+        "description": "Escribe una función que genere un número aleatorio entre un rango dado.",
+        "code": "using System;\n\nclass Program {\n    static int GenerarNumeroAleatorio(int min, int max) {\n        Random rnd = new Random();\n        return rnd.Next(min, max + 1);\n    }\n\n    static void Main(string[] args) {\n        int resultado = GenerarNumeroAleatorio(1, 100);\n        Console.WriteLine(resultado);\n    }\n}"
+      },
+      {
+        "id": 12,
+        "title": "Desafío 12 de C#",
+        "description": "Escribe una función que convierta un número binario a decimal.",
+        "code": "using System;\n\nclass Program {\n    static int BinarioADecimal(string binario) {\n        return Convert.ToInt32(binario, 2);\n    }\n\n    static void Main(string[] args) {\n        int resultado = BinarioADecimal(\"101010\");\n        Console.WriteLine(resultado);\n    }\n}"
+      },
+      {
+        "id": 13,
+        "title": "Desafío 13 de C#",
+        "description": "Escribe una función que ordene un arreglo de números de forma ascendente.",
+        "code": "using System;\n\nclass Program {\n    static int[] OrdenarAscendente(int[] numeros) {\n        Array.Sort(numeros);\n        return numeros;\n    }\n\n    static void Main(string[] args) {\n        int[] arreglo = { 5, 3, 8, 1, 7 };\n        int[] resultado = OrdenarAscendente(arreglo);\n        foreach (int numero in resultado) {\n            Console.Write(numero + \" \");\n        }\n    }\n}"
+      },
+      {
+        "id": 14,
+        "title": "Desafío 14 de C#",
+        "description": "Escribe una función que encuentre el elemento más frecuente en un arreglo.",
+        "code": "using System;\n\nclass Program {\n    static int ElementoMasFrecuente(int[] arreglo) {\n        int maxFrecuencia = 0;\n        int elementoMasFrecuente = 0;\n        foreach (int elemento in arreglo) {\n            int frecuencia = 0;\n            foreach (int num in arreglo) {\n                if (elemento == num) {\n                    frecuencia++;\n                }\n            }\n            if (frecuencia > maxFrecuencia) {\n                maxFrecuencia = frecuencia;\n                elementoMasFrecuente = elemento;\n            }\n        }\n        return elementoMasFrecuente;\n    }\n\n    static void Main(string[] args) {\n        int[] arreglo = { 3, 5, 2, 5, 5, 3, 1 };\n        int resultado = ElementoMasFrecuente(arreglo);\n        Console.WriteLine(resultado);\n    }\n}"
+      },
+      {
+        "id": 15,
+        "title": "Desafío 15 de C#",
+        "description": "Escribe una función que determine si un número es primo.",
+        "code": "using System;\n\nclass Program {\n    static bool EsPrimo(int numero) {\n        if (numero <= 1) {\n            return false;\n        }\n        for (int i = 2; i <= Math.Sqrt(numero); i++) {\n            if (numero % i == 0) {\n                return false;\n            }\n        }\n        return true;\n    }\n\n    static void Main(string[] args) {\n        bool resultado = EsPrimo(7);\n        Console.WriteLine(resultado);\n    }\n}"
+      },
+      {
+        "id": 16,
+        "title": "Desafío 16 de C#",
+        "description": "Escribe una función que sume todos los elementos de un arreglo.",
+        "code": "using System;\n\nclass Program {\n    static int SumarArreglo(int[] arreglo) {\n        int suma = 0;\n        foreach (int numero in arreglo) {\n            suma += numero;\n        }\n        return suma;\n    }\n\n    static void Main(string[] args) {\n        int[] arreglo = { 1, 2, 3, 4, 5 };\n        int resultado = SumarArreglo(arreglo);\n        Console.WriteLine(resultado);\n    }\n}"
+      },
+      {
+        "id": 17,
+        "title": "Desafío 17 de C#",
+        "description": "Escribe una función que encuentre la mediana de un conjunto de números.",
+        "code": "using System;\n\nclass Program {\n    static double Mediana(int[] numeros) {\n        Array.Sort(numeros);\n        int n = numeros.Length;\n        if (n % 2 == 0) {\n            return (numeros[n / 2 - 1] + numeros[n / 2]) / 2.0;\n        } else {\n            return numeros[n / 2];\n        }\n    }\n\n    static void Main(string[] args) {\n        int[] numeros = { 3, 1, 4, 2, 5 };\n        double resultado = Mediana(numeros);\n        Console.WriteLine(resultado);\n    }\n}"
+      },
+      {
+        "id": 18,
+        "title": "Desafío 18 de C#",
+        "description": "Escribe una función que encuentre el número más grande en un arreglo.",
+        "code": "using System;\n\nclass Program {\n    static int MaximoArreglo(int[] arreglo) {\n        int maximo = arreglo[0];\n        foreach (int numero in arreglo) {\n            if (numero > maximo) {\n                maximo = numero;\n            }\n        }\n        return maximo;\n    }\n\n    static void Main(string[] args) {\n        int[] arreglo = { 5, 3, 8, 1, 7 };\n        int resultado = MaximoArreglo(arreglo);\n        Console.WriteLine(resultado);\n    }\n}"
+      },
+      {
+        "id": 19,
+        "title": "Desafío 19 de C#",
+        "description": "Escribe una función que calcule el área de un círculo.",
+        "code": "using System;\n\nclass Program {\n    static double AreaCirculo(double radio) {\n        return Math.PI * Math.Pow(radio, 2);\n    }\n\n    static void Main(string[] args) {\n        double resultado = AreaCirculo(5);\n        Console.WriteLine(resultado);\n    }\n}"
+      },
+      {
+        "id": 20,
+        "title": "Desafío 20 de C#",
+        "description": "Escribe una función que determine si una cadena es un pangrama.",
+        "code": "using System;\n\nclass Program {\n    static bool EsPangrama(string cadena) {\n        cadena = cadena.ToLower();\n        for (char letra = 'a'; letra <= 'z'; letra++) {\n            if (!cadena.Contains(letra)) {\n                return false;\n            }\n        }\n        return true;\n    }\n\n    static void Main(string[] args) {\n        bool resultado = EsPangrama(\"The quick brown fox jumps over the lazy dog\");\n        Console.WriteLine(resultado);\n    }\n}"
+      } 
+    ]
+  },
+  {
+    "id": 5,
+    "title": "Curso de Java",
+    "challenges": [
+      {
+        "id": 1,
+        "title": "Desafío 1 de Java",
+        "description": "Escribe un programa que imprima '¡Hola, mundo!' en la consola.",
+        "code": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"¡Hola, mundo!\");\n    }\n}"
+      },
+      {
+        "id": 2,
+        "title": "Desafío 2 de Java",
+        "description": "Escribe una función que sume dos números y devuelva el resultado.",
+        "code": "public class Main {\n    public static int suma(int a, int b) {\n        return a + b;\n    }\n\n    public static void main(String[] args) {\n        int resultado = suma(5, 3);\n        System.out.println(resultado);\n    }\n}"
+      },
+      {
+        "id": 3,
+        "title": "Desafío 3 de Java",
+        "description": "Escribe una función que calcule el factorial de un número de forma recursiva.",
+        "code": "public class Main {\n    public static int factorial(int n) {\n        if (n == 0) {\n            return 1;\n        } else {\n            return n * factorial(n - 1);\n        }\n    }\n\n    public static void main(String[] args) {\n        int resultado = factorial(5);\n        System.out.println(resultado);\n    }\n}"
+      },
+      {
+        "id": 4,
+        "title": "Desafío 4 de Java",
+        "description": "Escribe una función que determine si un número es par o impar.",
+        "code": "public class Main {\n    public static boolean esPar(int numero) {\n        return numero % 2 == 0;\n    }\n\n    public static void main(String[] args) {\n        boolean resultado = esPar(5);\n        System.out.println(resultado);\n    }\n}"
+      },
+      {
+        "id": 5,
+        "title": "Desafío 5 de Java",
+        "description": "Escribe una función que encuentre el máximo de dos números.",
+        "code": "public class Main {\n    public static int maximo(int a, int b) {\n        return a > b ? a : b;\n    }\n\n    public static void main(String[] args) {\n        int resultado = maximo(5, 10);\n        System.out.println(resultado);\n    }\n}"
+      },
+      {
+        "id": 6,
+        "title": "Desafío 6 de Java",
+        "description": "Escribe una función que determine si un año es bisiesto o no.",
+        "code": "public class Main {\n    public static boolean esBisiesto(int anio) {\n        return (anio % 4 == 0 && anio % 100 != 0) || (anio % 400 == 0);\n    }\n\n    public static void main(String[] args) {\n        boolean resultado = esBisiesto(2024);\n        System.out.println(resultado);\n    }\n}"
+      },
+      {
+        "id": 7,
+        "title": "Desafío 7 de Java",
+        "description": "Escribe una función que cuente el número de vocales en una cadena.",
+        "code": "public class Main {\n    public static int contarVocales(String cadena) {\n        int contador = 0;\n        String vocales = \"aeiouAEIOU\";\n        for (int i = 0; i < cadena.length(); i++) {\n            if (vocales.contains(String.valueOf(cadena.charAt(i)))) {\n                contador++;\n            }\n        }\n        return contador;\n    }\n\n    public static void main(String[] args) {\n        int resultado = contarVocales(\"Murcielago\");\n        System.out.println(resultado);\n    }\n}"
+      },
+      {
+        "id": 8,
+        "title": "Desafío 8 de Java",
+        "description": "Escribe una función que determine si una cadena es un palíndromo.",
+        "code": "public class Main {\n    public static boolean esPalindromo(String cadena) {\n        String reversa = \"\";\n        for (int i = cadena.length() - 1; i >= 0; i--) {\n            reversa += cadena.charAt(i);\n        }\n        return cadena.equalsIgnoreCase(reversa);\n    }\n\n    public static void main(String[] args) {\n        boolean resultado = esPalindromo(\"reconocer\");\n        System.out.println(resultado);\n    }\n}"
+      },
+      {
+        "id": 9,
+        "title": "Desafío 9 de Java",
+        "description": "Escribe una función que genere un número aleatorio entre un rango dado.",
+        "code": "import java.util.Random;\n\npublic class Main {\n    public static int generarNumeroAleatorio(int min, int max) {\n        Random rnd = new Random();\n        return rnd.nextInt((max - min) + 1) + min;\n    }\n\n    public static void main(String[] args) {\n        int resultado = generarNumeroAleatorio(1, 100);\n        System.out.println(resultado);\n    }\n}"
+      },
+      {
+        "id": 10,
+        "title": "Desafío 10 de Java",
+        "description": "Escribe una función que encuentre la suma de los dígitos de un número entero.",
+        "code": "public class Main {\n    public static int sumarDigitos(int numero) {\n        int suma = 0;\n        while (numero != 0) {\n            suma += numero % 10;\n            numero /= 10;\n        }\n        return suma;\n    }\n\n    public static void main(String[] args) {\n        int resultado = sumarDigitos(12345);\n        System.out.println(resultado);\n    }\n}"
+      },
+      {
+        "id": 11,
+        "title": "Desafío 11 de Java",
+        "description": "Escribe una función que encuentre el mínimo común múltiplo (MCM) de dos números.",
+        "code": "public class Main {\n    public static int mcm(int a, int b) {\n        return (a * b) / gcd(a, b);\n    }\n\n    public static int gcd(int a, int b) {\n        while (b != 0) {\n            int temp = b;\n            b = a % b;\n            a = temp;\n        }\n        return a;\n    }\n\n    public static void main(String[] args) {\n        int resultado = mcm(12, 15);\n        System.out.println(resultado);\n    }\n}"
+      },
+      {
+        "id": 12,
+        "title": "Desafío 12 de Java",
+        "description": "Escribe una función que determine si un número es primo.",
+        "code": "public class Main {\n    public static boolean esPrimo(int numero) {\n        if (numero <= 1) {\n            return false;\n        }\n        for (int i = 2; i <= Math.sqrt(numero); i++) {\n            if (numero % i == 0) {\n                return false;\n            }\n        }\n        return true;\n    }\n\n    public static void main(String[] args) {\n        boolean resultado = esPrimo(7);\n        System.out.println(resultado);\n    }\n}"
+      },
+      {
+        "id": 13,
+        "title": "Desafío 13 de Java",
+        "description": "Escribe una función que calcule el área de un triángulo dado su base y altura.",
+        "code": "public class Main {\n    public static double areaTriangulo(double base, double altura) {\n        return (base * altura) / 2;\n    }\n\n    public static void main(String[] args) {\n        double resultado = areaTriangulo(5, 8);\n        System.out.println(resultado);\n    }\n}"
+      },
+      {
+        "id": 14,
+        "title": "Desafío 14 de Java",
+        "description": "Escribe una función que cuente el número de palabras en una cadena.",
+        "code": "public class Main {\n    public static int contarPalabras(String cadena) {\n        String[] palabras = cadena.split(\"\\\\s+\");\n        return palabras.length;\n    }\n\n    public static void main(String[] args) {\n        int resultado = contarPalabras(\"Esta es una cadena de ejemplo\");\n        System.out.println(resultado);\n    }\n}"
+      },
+      {
+        "id": 15,
+        "title": "Desafío 15 de Java",
+        "description": "Escribe una función que invierta una cadena.",
+        "code": "public class Main {\n    public static String invertirCadena(String cadena) {\n        StringBuilder invertida = new StringBuilder();\n        for (int i = cadena.length() - 1; i >= 0; i--) {\n            invertida.append(cadena.charAt(i));\n        }\n        return invertida.toString();\n    }\n\n    public static void main(String[] args) {\n        String resultado = invertirCadena(\"java\");\n        System.out.println(resultado);\n    }\n}"
+      },
+      {
+        "id": 16,
+        "title": "Desafío 16 de Java",
+        "description": "Escribe una función que elimine los espacios en blanco de una cadena.",
+        "code": "public class Main {\n    public static String eliminarEspacios(String cadena) {\n        return cadena.replaceAll(\"\\\\s\", \"\");\n    }\n\n    public static void main(String[] args) {\n        String resultado = eliminarEspacios(\"hola mundo\");\n        System.out.println(resultado);\n    }\n}"
+      },
+      {
+        "id": 17,
+        "title": "Desafío 17 de Java",
+        "description": "Escribe una función que calcule la suma de los elementos de una matriz.",
+        "code": "public class Main {\n    public static int sumaMatriz(int[][] matriz) {\n        int suma = 0;\n        for (int[] fila : matriz) {\n            for (int elemento : fila) {\n                suma += elemento;\n            }\n        }\n        return suma;\n    }\n\n    public static void main(String[] args) {\n        int[][] matriz = {{1, 2, 3}, {4, 5, 6}, {7, 8, 9}};\n        int resultado = sumaMatriz(matriz);\n        System.out.println(resultado);\n    }\n}"
+      },
+      {
+        "id": 18,
+        "title": "Desafío 18 de Java",
+        "description": "Escribe una función que encuentre el número más grande en una matriz.",
+        "code": "public class Main {\n    public static int maximoMatriz(int[][] matriz) {\n        int maximo = matriz[0][0];\n        for (int[] fila : matriz) {\n            for (int elemento : fila) {\n                if (elemento > maximo) {\n                    maximo = elemento;\n                }\n            }\n        }\n        return maximo;\n    }\n\n    public static void main(String[] args) {\n        int[][] matriz = {{1, 2, 3}, {4, 5, 6}, {7, 8, 9}};\n        int resultado = maximoMatriz(matriz);\n        System.out.println(resultado);\n    }\n}"
+      },
+      {
+        "id": 19,
+        "title": "Desafío 19 de Java",
+        "description": "Escribe una función que encuentre el promedio de los elementos de una matriz.",
+        "code": "public class Main {\n    public static double promedioMatriz(int[][] matriz) {\n        int suma = 0;\n        int elementos = 0;\n        for (int[] fila : matriz) {\n            for (int elemento : fila) {\n                suma += elemento;\n                elementos++;\n            }\n        }\n        return (double) suma / elementos;\n    }\n\n    public static void main(String[] args) {\n        int[][] matriz = {{1, 2, 3}, {4, 5, 6}, {7, 8, 9}};\n        double resultado = promedioMatriz(matriz);\n        System.out.println(resultado);\n    }\n}"
+      },
+      {
+        "id": 20,
+        "title": "Desafío 20 de Java",
+        "description": "Escribe una función que determine si una cadena es un anagrama de otra.",
+        "code": "import java.util.Arrays;\n\npublic class Main {\n    public static boolean esAnagrama(String cadena1, String cadena2) {\n        char[] arreglo1 = cadena1.replaceAll(\"[\\\\s]\", \"\").toCharArray();\n        char[] arreglo2 = cadena2.replaceAll(\"[\\\\s]\", \"\").toCharArray();\n        Arrays.sort(arreglo1);\n        Arrays.sort(arreglo2);\n        return Arrays.equals(arreglo1, arreglo2);\n    }\n\n    public static void main(String[] args) {\n        boolean resultado = esAnagrama(\"anagrama\", \"nagarama\");\n        System.out.println(resultado);\n    }\n}"
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "title": "Curso de PHP",
+    "challenges": [
+      {
+        "id": 1,
+        "title": "Desafío 1 de PHP",
+        "description": "Escribe un programa que imprima '¡Hola, mundo!' en la pantalla.",
+        "code": "<?php\n    echo \"¡Hola, mundo!\";\n?>"
+      },
+      {
+        "id": 2,
+        "title": "Desafío 2 de PHP",
+        "description": "Escribe una función que sume dos números y devuelva el resultado.",
+        "code": "<?php\n    function suma($a, $b) {\n        return $a + $b;\n    }\n\n    echo suma(3, 5);\n?>"
+      },
+      {
+        "id": 3,
+        "title": "Desafío 3 de PHP",
+        "description": "Escribe una función que calcule el factorial de un número de forma recursiva.",
+        "code": "<?php\n    function factorial($n) {\n        if ($n == 0) {\n            return 1;\n        } else {\n            return $n * factorial($n - 1);\n        }\n    }\n\n    echo factorial(5);\n?>"
+      },
+      {
+        "id": 4,
+        "title": "Desafío 4 de PHP",
+        "description": "Escribe una función que determine si un número es primo.",
+        "code": "<?php\n    function esPrimo($numero) {\n        if ($numero <= 1) {\n            return false;\n        }\n        for ($i = 2; $i <= sqrt($numero); $i++) {\n            if ($numero % $i == 0) {\n                return false;\n            }\n        }\n        return true;\n    }\n\n    echo esPrimo(7) ? 'Verdadero' : 'Falso';\n?>"
+      },
+      {
+        "id": 5,
+        "title": "Desafío 5 de PHP",
+        "description": "Escribe una función que determine si una cadena es un palíndromo.",
+        "code": "<?php\n    function esPalindromo($cadena) {\n        $cadena = strtolower(preg_replace('/[^a-zA-Z0-9]/', '', $cadena));\n        return $cadena == strrev($cadena);\n    }\n\n    echo esPalindromo('Anita lava la tina') ? 'Verdadero' : 'Falso';\n?>"
+      },
+      {
+        "id": 6,
+        "title": "Desafío 6 de PHP",
+        "description": "Escribe una función que cuente el número de palabras en una cadena.",
+        "code": "<?php\n    function contarPalabras($cadena) {\n        return str_word_count($cadena);\n    }\n\n    echo contarPalabras('Esto es una cadena de ejemplo');\n?>"
+      },
+      {
+        "id": 7,
+        "title": "Desafío 7 de PHP",
+        "description": "Escribe una función que invierta una cadena.",
+        "code": "<?php\n    function invertirCadena($cadena) {\n        return strrev($cadena);\n    }\n\n    echo invertirCadena('PHP es genial');\n?>"
+      },
+      {
+        "id": 8,
+        "title": "Desafío 8 de PHP",
+        "description": "Escribe una función que elimine los espacios en blanco de una cadena.",
+        "code": "<?php\n    function eliminarEspacios($cadena) {\n        return str_replace(' ', '', $cadena);\n    }\n\n    echo eliminarEspacios('Hola mundo');\n?>"
+      },
+      {
+        "id": 9,
+        "title": "Desafío 9 de PHP",
+        "description": "Escribe una función que calcule la suma de los elementos de un arreglo.",
+        "code": "<?php\n    function sumaArreglo($arreglo) {\n        return array_sum($arreglo);\n    }\n\n    echo sumaArreglo([1, 2, 3, 4, 5]);\n?>"
+      },
+      {
+        "id": 10,
+        "title": "Desafío 10 de PHP",
+        "description": "Escribe una función que encuentre el valor mínimo en un arreglo.",
+        "code": "<?php\n    function minimoArreglo($arreglo) {\n        return min($arreglo);\n    }\n\n    echo minimoArreglo([5, 3, 8, 1, 4]);\n?>"
+      },
+      {
+        "id": 11,
+        "title": "Desafío 11 de PHP",
+        "description": "Escribe una función que calcule el área de un círculo dado su radio.",
+        "code": "<?php\n    function areaCirculo($radio) {\n        return M_PI * $radio * $radio;\n    }\n\n    echo areaCirculo(5);\n?>"
+      },
+      {
+        "id": 12,
+        "title": "Desafío 12 de PHP",
+        "description": "Escribe una función que determine si un número es positivo, negativo o cero.",
+        "code": "<?php\n    function tipoNumero($numero) {\n        if ($numero > 0) {\n            return 'Positivo';\n        } elseif ($numero < 0) {\n            return 'Negativo';\n        } else {\n            return 'Cero';\n        }\n    }\n\n    echo tipoNumero(-5);\n?>"
+      },
+      {
+        "id": 13,
+        "title": "Desafío 13 de PHP",
+        "description": "Escribe una función que cuente el número de elementos únicos en un arreglo.",
+        "code": "<?php\n    function elementosUnicos($arreglo) {\n        return count(array_unique($arreglo));\n    }\n\n    echo elementosUnicos([1, 2, 3, 2, 1, 4, 5]);\n?>"
+      },
+      {
+        "id": 14,
+        "title": "Desafío 14 de PHP",
+        "description": "Escribe una función que sume los dígitos de un número entero.",
+        "code": "<?php\n    function sumaDigitos($numero) {\n        $suma = 0;\n        while ($numero != 0) {\n            $suma += $numero % 10;\n            $numero = (int) ($numero / 10);\n        }\n        return $suma;\n    }\n\n    echo sumaDigitos(12345);\n?>"
+      },
+      {
+        "id": 15,
+        "title": "Desafío 15 de PHP",
+        "description": "Escribe una función que encuentre el máximo común divisor (MCD) de dos números.",
+        "code": "<?php\n    function mcd($a, $b) {\n        while ($b != 0) {\n            $temp = $b;\n            $b = $a % $b;\n            $a = $temp;\n        }\n        return $a;\n    }\n\n    echo mcd(12, 15);\n?>"
+      },
+      {
+        "id": 16,
+        "title": "Desafío 16 de PHP",
+        "description": "Escribe una función que determine si un año es bisiesto o no.",
+        "code": "<?php\n    function esBisiesto($anio) {\n        return (($anio % 4 == 0) && ($anio % 100 != 0)) || ($anio % 400 == 0);\n    }\n\n    echo esBisiesto(2024) ? 'Verdadero' : 'Falso';\n?>"
+      },
+      {
+        "id": 17,
+        "title": "Desafío 17 de PHP",
+        "description": "Escribe una función que encuentre el número de Fibonacci en una posición dada.",
+        "code": "<?php\n    function fibonacci($n) {\n        if ($n <= 1) {\n            return $n;\n        }\n        return fibonacci($n - 1) + fibonacci($n - 2);\n    }\n\n    echo fibonacci(7);\n?>"
+      },
+      {
+        "id": 18,
+        "title": "Desafío 18 de PHP",
+        "description": "Escribe una función que convierta una cadena a minúsculas.",
+        "code": "<?php\n    function aMinusculas($cadena) {\n        return strtolower($cadena);\n    }\n\n    echo aMinusculas('HOLA MUNDO');\n?>"
+      },
+      {
+        "id": 19,
+        "title": "Desafío 19 de PHP",
+        "description": "Escribe una función que calcule el área de un triángulo dado sus tres lados.",
+        "code": "<?php\n    function areaTriangulo($a, $b, $c) {\n        $s = ($a + $b + $c) / 2;\n        return sqrt($s * ($s - $a) * ($s - $b) * ($s - $c));\n    }\n\n    echo areaTriangulo(3, 4, 5);\n?>"
+      },
+      {
+        "id": 20,
+        "title": "Desafío 20 de PHP",
+        "description": "Escribe una función que determine si una cadena es un palíndromo.",
+        "code": "<?php\n    function esPalindromo($cadena) {\n        $cadena = strtolower(preg_replace('/[^a-zA-Z0-9]/', '', $cadena));\n        return $cadena == strrev($cadena);\n    }\n\n    echo esPalindromo('Anita lava la tina') ? 'Verdadero' : 'Falso';\n?>"
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "title": "Curso de Python - Desafíos Intermedios II",
+    "challenges": [
+      {
+        "id": 1,
+        "title": "Desafío 1: Calculadora Básica",
+        "description": "Escribe una función que implemente una calculadora básica que soporte las operaciones de suma, resta, multiplicación y división.",
+        "code": "def calculadora(a, b, operacion):\n    if operacion == 'suma':\n        return a + b\n    elif operacion == 'resta':\n        return a - b\n    elif operacion == 'multiplicacion':\n        return a * b\n    elif operacion == 'division':\n        if b != 0:\n            return a / b\n        else:\n            return 'Error: Division por cero'\n    else:\n        return 'Operacion no valida'\n\nprint(calculadora(10, 5, 'suma'))"
+      },
+      {
+        "id": 2,
+        "title": "Desafío 2: Palabras Más Comunes",
+        "description": "Escribe una función que reciba un texto y devuelva las n palabras más comunes.",
+        "code": "from collections import Counter\n\ndef palabras_mas_comunes(texto, n):\n    palabras = texto.split()\n    contador = Counter(palabras)\n    return contador.most_common(n)\n\nprint(palabras_mas_comunes('hola hola mundo mundo mundo python python', 2))"
+      },
+      {
+        "id": 3,
+        "title": "Desafío 3: Comprimir Cadena",
+        "description": "Escribe una función que comprima una cadena usando el conteo de caracteres repetidos. Por ejemplo, 'aaabcc' se convierte en 'a3b1c2'.",
+        "code": "def comprimir_cadena(cadena):\n    if not cadena:\n        return ''\n    comprimida = []\n    contador = 1\n    for i in range(1, len(cadena)):\n        if cadena[i] == cadena[i - 1]:\n            contador += 1\n        else:\n            comprimida.append(cadena[i - 1] + str(contador))\n            contador = 1\n    comprimida.append(cadena[-1] + str(contador))\n    return ''.join(comprimida)\n\nprint(comprimir_cadena('aaabcc'))"
+      },
+      {
+        "id": 4,
+        "title": "Desafío 4: Números Perfectos",
+        "description": "Escribe una función que determine si un número es perfecto (la suma de sus divisores propios es igual al propio número).",
+        "code": "def es_perfecto(n):\n    if n < 2:\n        return False\n    suma_divisores = sum(i for i in range(1, n) if n % i == 0)\n    return suma_divisores == n\n\nprint(es_perfecto(28))"
+      },
+      {
+        "id": 5,
+        "title": "Desafío 5: Ordenar Diccionarios",
+        "description": "Escribe una función que reciba una lista de diccionarios y los ordene por una clave específica.",
+        "code": "def ordenar_diccionarios(lista, clave):\n    return sorted(lista, key=lambda x: x[clave])\n\npersonas = [{'nombre': 'Juan', 'edad': 30}, {'nombre': 'Ana', 'edad': 25}, {'nombre': 'Luis', 'edad': 35}]\nprint(ordenar_diccionarios(personas, 'edad'))"
+      },
+      {
+        "id": 6,
+        "title": "Desafío 6: Conteo de Caracteres",
+        "description": "Escribe una función que reciba una cadena y devuelva un diccionario con el conteo de cada carácter.",
+        "code": "def conteo_caracteres(cadena):\n    conteo = {}\n    for char in cadena:\n        if char in conteo:\n            conteo[char] += 1\n        else:\n            conteo[char] = 1\n    return conteo\n\nprint(conteo_caracteres('abracadabra'))"
+      },
+      {
+        "id": 7,
+        "title": "Desafío 7: Palíndromo",
+        "description": "Escribe una función que determine si una cadena es un palíndromo (se lee igual al derecho y al revés).",
+        "code": "def es_palindromo(cadena):\n    cadena = cadena.replace(' ', '').lower()\n    return cadena == cadena[::-1]\n\nprint(es_palindromo('Anita lava la tina'))"
+      },
+      {
+        "id": 8,
+        "title": "Desafío 8: Matriz Traspuesta",
+        "description": "Escribe una función que reciba una matriz y devuelva su traspuesta.",
+        "code": "def traspuesta(matriz):\n    return list(map(list, zip(*matriz)))\n\nmatriz = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]\nprint(traspuesta(matriz))"
+      },
+      {
+        "id": 9,
+        "title": "Desafío 9: Números Amistosos",
+        "description": "Escribe una función que determine si dos números son amistosos (la suma de los divisores propios de cada uno es igual al otro número).",
+        "code": "def suma_divisores(n):\n    return sum(i for i in range(1, n) if n % i == 0)\n\ndef son_amistosos(a, b):\n    return suma_divisores(a) == b and suma_divisores(b) == a\n\nprint(son_amistosos(220, 284))"
+      },
+      {
+        "id": 10,
+        "title": "Desafío 10: Diccionario Invertido",
+        "description": "Escribe una función que reciba un diccionario y devuelva otro diccionario con las claves y valores invertidos.",
+        "code": "def invertir_diccionario(diccionario):\n    return {valor: clave for clave, valor in diccionario.items()}\n\nprint(invertir_diccionario({'a': 1, 'b': 2, 'c': 3}))"
+      },
+      {
+        "id": 11,
+        "title": "Desafío 11: Conversor de Unidades",
+        "description": "Escribe una función que convierta kilómetros a millas. (1 km = 0.621371 miles)",
+        "code": "def km_a_millas(km):\n    return km * 0.621371\n\nprint(km_a_millas(5))"
+      },
+      {
+        "id": 12,
+        "title": "Desafío 12: Verificar Número Primo",
+        "description": "Escribe una función que determine si un número es primo.",
+        "code": "def es_primo(n):\n    if n <= 1:\n        return False\n    for i in range(2, int(n ** 0.5) + 1):\n        if n % i == 0:\n            return False\n    return True\n\nprint(es_primo(17))"
+      },
+      {
+        "id": 13,
+        "title": "Desafío 13: Ordenar Palabras en Orden Alfabético",
+        "description": "Escribe una función que reciba una lista de palabras y las devuelva en orden alfabético.",
+        "code": "def ordenar_palabras(palabras):\n    return sorted(palabras)\n\nprint(ordenar_palabras(['pera', 'manzana', 'banana']))"
+      },
+      {
+        "id": 14,
+        "title": "Desafío 14: Contar Vocales",
+        "description": "Escribe una función que cuente el número de vocales en una cadena de texto.",
+        "code": "def contar_vocales(texto):\n    vocales = 'aeiouAEIOU'\n    return sum(1 for char in texto if char in vocales)\n\nprint(contar_vocales('Hola Mundo'))"
+      },
+      {
+        "id": 15,
+        "title": "Desafío 15: Generador de Números Fibonacci",
+        "description": "Escribe una función que genere los primeros n números de la secuencia de Fibonacci.",
+        "code": "def fibonacci(n):\n    secuencia = [0, 1]\n    while len(secuencia) < n:\n        secuencia.append(secuencia[-1] + secuencia[-2])\n    return secuencia[:n]\n\nprint(fibonacci(10))"
+      },
+      {
+        "id": 16,
+        "title": "Desafío 16: Anagramas",
+        "description": "Escribe una función que determine si dos cadenas son anagramas.",
+        "code": "def son_anagramas(str1, str2):\n    return sorted(str1) == sorted(str2)\n\nprint(son_anagramas('listen', 'silent'))"
+      },
+      {
+        "id": 17,
+        "title": "Desafío 17: Suma de Dígitos",
+        "description": "Escribe una función que calcule la suma de los dígitos de un número.",
+        "code": "def suma_digitos(n):\n    return sum(int(digito) for digito in str(n))\n\nprint(suma_digitos(12345))"
+      },
+      {
+        "id": 18,
+        "title": "Desafío 18: Factorial Iterativo",
+        "description": "Escribe una función que calcule el factorial de un número de forma iterativa.",
+        "code": "def factorial_iterativo(n):\n    resultado = 1\n    for i in range(1, n + 1):\n        resultado *= i\n    return resultado\n\nprint(factorial_iterativo(5))"
+      },
+      {
+        "id": 19,
+        "title": "Desafío 19: Buscar Elemento en Lista",
+        "description": "Escribe una función que busque un elemento en una lista y devuelva su índice. Si no se encuentra, devuelve -1.",
+        "code": "def buscar_elemento(lista, elemento):\n    try:\n        return lista.index(elemento)\n    except ValueError:\n        return -1\n\nprint(buscar_elemento([1, 2, 3, 4, 5], 3))"
+      },
+      {
+        "id": 20,
+        "title": "Desafío 20: Contar Palabras",
+        "description": "Escribe una función que cuente el número de palabras en una cadena de texto.",
+        "code": "def contar_palabras(texto):\n    palabras = texto.split()\n    return len(palabras)\n\nprint(contar_palabras('Hola, este es un desafío de programación.'))"
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "title": "Curso de JavaScript - Desafíos Intermedios II",
+    "challenges": [
+      {
+        "id": 1,
+        "title": "Desafío 1: Calculadora Básica",
+        "description": "Escribe una función que implemente una calculadora básica que soporte las operaciones de suma, resta, multiplicación y división.",
+        "code": "function calculadora(a, b, operacion) {\n    switch (operacion) {\n        case 'suma':\n            return a + b;\n        case 'resta':\n            return a - b;\n        case 'multiplicacion':\n            return a * b;\n        case 'division':\n            return b !== 0 ? a / b : 'Error: Division por cero';\n        default:\n            return 'Operacion no valida';\n    }\n}\nconsole.log(calculadora(10, 5, 'suma'));"
+      },
+      {
+        "id": 2,
+        "title": "Desafío 2: Palabras Más Comunes",
+        "description": "Escribe una función que reciba un texto y devuelva las n palabras más comunes.",
+        "code": "function palabrasMasComunes(texto, n) {\n    const palabras = texto.split(' ');\n    const contador = {};\n    palabras.forEach(palabra => {\n        contador[palabra] = (contador[palabra] || 0) + 1;\n    });\n    return Object.entries(contador).sort((a, b) => b[1] - a[1]).slice(0, n);\n}\nconsole.log(palabrasMasComunes('hola hola mundo mundo mundo javascript javascript', 2));"
+      },
+      {
+        "id": 3,
+        "title": "Desafío 3: Comprimir Cadena",
+        "description": "Escribe una función que comprima una cadena usando el conteo de caracteres repetidos. Por ejemplo, 'aaabcc' se convierte en 'a3b1c2'.",
+        "code": "function comprimirCadena(cadena) {\n    if (!cadena) return '';\n    let comprimida = '';\n    let contador = 1;\n    for (let i = 1; i < cadena.length; i++) {\n        if (cadena[i] === cadena[i - 1]) {\n            contador++;\n        } else {\n            comprimida += cadena[i - 1] + contador;\n            contador = 1;\n        }\n    }\n    comprimida += cadena[cadena.length - 1] + contador;\n    return comprimida;\n}\nconsole.log(comprimirCadena('aaabcc'));"
+      },
+      {
+        "id": 4,
+        "title": "Desafío 4: Números Perfectos",
+        "description": "Escribe una función que determine si un número es perfecto (la suma de sus divisores propios es igual al propio número).",
+        "code": "function esPerfecto(n) {\n    if (n < 2) return false;\n    let sumaDivisores = 0;\n    for (let i = 1; i < n; i++) {\n        if (n % i === 0) {\n            sumaDivisores += i;\n        }\n    }\n    return sumaDivisores === n;\n}\nconsole.log(esPerfecto(28));"
+      },
+      {
+        "id": 5,
+        "title": "Desafío 5: Ordenar Diccionarios",
+        "description": "Escribe una función que reciba una lista de diccionarios y los ordene por una clave específica.",
+        "code": "function ordenarDiccionarios(lista, clave) {\n    return lista.sort((a, b) => (a[clave] > b[clave] ? 1 : -1));\n}\nconst personas = [{ nombre: 'Juan', edad: 30 }, { nombre: 'Ana', edad: 25 }, { nombre: 'Luis', edad: 35 }];\nconsole.log(ordenarDiccionarios(personas, 'edad'));"
+      },
+      {
+        "id": 6,
+        "title": "Desafío 6: Conteo de Caracteres",
+        "description": "Escribe una función que reciba una cadena y devuelva un diccionario con el conteo de cada carácter.",
+        "code": "function conteoCaracteres(cadena) {\n    const conteo = {};\n    for (const char of cadena) {\n        conteo[char] = (conteo[char] || 0) + 1;\n    }\n    return conteo;\n}\nconsole.log(conteoCaracteres('abracadabra'));"
+      },
+      {
+        "id": 7,
+        "title": "Desafío 7: Palíndromo",
+        "description": "Escribe una función que determine si una cadena es un palíndromo (se lee igual al derecho y al revés).",
+        "code": "function esPalindromo(cadena) {\n    cadena = cadena.replace(/\\s+/g, '').toLowerCase();\n    return cadena === cadena.split('').reverse().join('');\n}\nconsole.log(esPalindromo('Anita lava la tina'));"
+      },
+      {
+        "id": 8,
+        "title": "Desafío 8: Matriz Traspuesta",
+        "description": "Escribe una función que reciba una matriz y devuelva su traspuesta.",
+        "code": "function traspuesta(matriz) {\n    return matriz[0].map((_, i) => matriz.map(row => row[i]));\n}\nconst matriz = [[1, 2, 3], [4, 5, 6], [7, 8, 9]];\nconsole.log(traspuesta(matriz));"
+      },
+      {
+        "id": 9,
+        "title": "Desafío 9: Números Amistosos",
+        "description": "Escribe una función que determine si dos números son amistosos (la suma de los divisores propios de cada uno es igual al otro número).",
+        "code": "function sumaDivisores(n) {\n    let suma = 0;\n    for (let i = 1; i < n; i++) {\n        if (n % i === 0) {\n            suma += i;\n        }\n    }\n    return suma;\n}\nfunction sonAmistosos(a, b) {\n    return sumaDivisores(a) === b && sumaDivisores(b) === a;\n}\nconsole.log(sonAmistosos(220, 284));"
+      },
+      {
+        "id": 10,
+        "title": "Desafío 10: Diccionario Invertido",
+        "description": "Escribe una función que reciba un diccionario y devuelva otro diccionario con las claves y valores invertidos.",
+        "code": "function invertirDiccionario(diccionario) {\n    const invertido = {};\n    for (const clave in diccionario) {\n        invertido[diccionario[clave]] = clave;\n    }\n    return invertido;\n}\nconsole.log(invertirDiccionario({ a: 1, b: 2, c: 3 }));"
+      },
+      {
+        "id": 11,
+        "title": "Desafío 11: Filtrar Números Pares",
+        "description": "Escribe una función que reciba una lista de números y devuelva solo los números pares.",
+        "code": "function filtrarPares(numeros) {\n    return numeros.filter(num => num % 2 === 0);\n}\nconsole.log(filtrarPares([1, 2, 3, 4, 5, 6]));"
+      },
+      {
+        "id": 12,
+        "title": "Desafío 12: Buscar Mayor Número",
+        "description": "Escribe una función que encuentre el mayor número en una lista.",
+        "code": "function encontrarMayor(numeros) {\n    return Math.max(...numeros);\n}\nconsole.log(encontrarMayor([1, 2, 3, 4, 5]));"
+      },
+      {
+        "id": 13,
+        "title": "Desafío 13: Invertir Cadena",
+        "description": "Escribe una función que invierta una cadena de texto.",
+        "code": "function invertirCadena(cadena) {\n    return cadena.split('').reverse().join('');\n}\nconsole.log(invertirCadena('Hola Mundo'));"
+      },
+      {
+        "id": 14,
+        "title": "Desafío 14: Número de Vocales",
+        "description": "Escribe una función que cuente el número de vocales en una cadena de texto.",
+        "code": "function contarVocales(texto) {\n    const vocales = 'aeiouAEIOU';\n    return texto.split('').filter(char => vocales.includes(char)).length;\n}\nconsole.log(contarVocales('Hola Mundo'));"
+      },
+      {
+        "id": 15,
+        "title": "Desafío 15: Números Duplicados",
+        "description": "Escribe una función que reciba una lista de números y elimine los números duplicados.",
+        "code": "function eliminarDuplicados(numeros) {\n    return [...new Set(numeros)];\n}\nconsole.log(eliminarDuplicados([1, 2, 2, 3, 4, 4, 5]));"
+      },
+      {
+        "id": 16,
+        "title": "Desafío 16: Producto de Elementos",
+        "description": "Escribe una función que calcule el producto de todos los elementos en una lista de números.",
+        "code": "function productoElementos(numeros) {\n    return numeros.reduce((producto, num) => producto * num, 1);\n}\nconsole.log(productoElementos([1, 2, 3, 4, 5]));"
+      },
+      {
+        "id": 17,
+        "title": "Desafío 17: Ordenar Alfabéticamente",
+        "description": "Escribe una función que ordene una lista de palabras alfabéticamente.",
+        "code": "function ordenarAlfabeticamente(palabras) {\n    return palabras.sort();\n}\nconsole.log(ordenarAlfabeticamente(['pera', 'manzana', 'banana']));"
+      },
+      {
+        "id": 18,
+        "title": "Desafío 18: Crear Matriz Identidad",
+        "description": "Escribe una función que cree una matriz identidad de tamaño n.",
+        "code": "function crearMatrizIdentidad(n) {\n    return Array.from({ length: n }, (_, i) => Array.from({ length: n }, (_, j) => i === j ? 1 : 0));\n}\nconsole.log(crearMatrizIdentidad(3));"
+      },
+      {
+        "id": 19,
+        "title": "Desafío 19: Encontrar la Palabra Más Larga",
+        "description": "Escribe una función que reciba una lista de palabras y devuelva la más larga.",
+        "code": "function encontrarPalabraMasLarga(palabras) {\n    return palabras.reduce((a, b) => a.length > b.length ? a : b);\n}\nconsole.log(encontrarPalabraMasLarga(['pera', 'manzana', 'banana', 'sandia']));"
+      },
+      {
+        "id": 20,
+        "title": "Desafío 20: Convertir a Título",
+        "description": "Escribe una función que convierta una cadena de texto a formato título, es decir, que la primera letra de cada palabra sea mayúscula.",
+        "code": "function convertirATitulo(cadena) {\n    return cadena.split(' ').map(palabra => palabra.charAt(0).toUpperCase() + palabra.slice(1)).join(' ');\n}\nconsole.log(convertirATitulo('hola mundo desde javascript'));"
+      }
+      
+    ]
+  },
+  {
+    "id": 2,
+    "title": "Curso de Dart - Desafíos Intermedios II",
+    "challenges": [
+      {
+        "id": 1,
+        "title": "Desafío 1: Suma de Pares e Impares",
+        "description": "Escribe una función que reciba una lista de números y devuelva la suma de los números pares e impares en dos variables separadas.",
+        "code": "Map<String, int> sumarParesEImpares(List<int> numeros) {\n  int sumaPares = 0;\n  int sumaImpares = 0;\n  for (var num in numeros) {\n    if (num % 2 == 0) {\n      sumaPares += num;\n    } else {\n      sumaImpares += num;\n    }\n  }\n  return {'pares': sumaPares, 'impares': sumaImpares};\n}\n\nvoid main() {\n  print(sumarParesEImpares([1, 2, 3, 4, 5, 6]));\n}"
+      },
+      {
+        "id": 2,
+        "title": "Desafío 2: Contar Caracteres",
+        "description": "Escribe una función que cuente la cantidad de veces que aparece cada carácter en una cadena.",
+        "code": "Map<String, int> contarCaracteres(String cadena) {\n  Map<String, int> contador = {};\n  for (var char in cadena.split('')) {\n    if (contador.containsKey(char)) {\n      contador[char] = contador[char]! + 1;\n    } else {\n      contador[char] = 1;\n    }\n  }\n  return contador;\n}\n\nvoid main() {\n  print(contarCaracteres('abracadabra'));\n}"
+      },
+      {
+        "id": 3,
+        "title": "Desafío 3: Generar Números Primos",
+        "description": "Escribe una función que genere una lista de números primos hasta un número dado.",
+        "code": "List<int> generarPrimos(int max) {\n  List<int> primos = [];\n  for (int num = 2; num <= max; num++) {\n    bool esPrimo = true;\n    for (int div = 2; div <= num ~/ 2; div++) {\n      if (num % div == 0) {\n        esPrimo = false;\n        break;\n      }\n    }\n    if (esPrimo) {\n      primos.add(num);\n    }\n  }\n  return primos;\n}\n\nvoid main() {\n  print(generarPrimos(20));\n}"
+      },
+      {
+        "id": 4,
+        "title": "Desafío 4: Palabra Más Frecuente",
+        "description": "Escribe una función que encuentre la palabra más frecuente en una lista de palabras.",
+        "code": "String palabraMasFrecuente(List<String> palabras) {\n  Map<String, int> contador = {};\n  for (var palabra in palabras) {\n    if (contador.containsKey(palabra)) {\n      contador[palabra] = contador[palabra]! + 1;\n    } else {\n      contador[palabra] = 1;\n    }\n  }\n  String masFrecuente = '';\n  int maxCount = 0;\n  contador.forEach((palabra, count) {\n    if (count > maxCount) {\n      masFrecuente = palabra;\n      maxCount = count;\n    }\n  });\n  return masFrecuente;\n}\n\nvoid main() {\n  print(palabraMasFrecuente(['apple', 'banana', 'apple', 'orange', 'banana', 'apple']));\n}"
+      },
+      {
+        "id": 5,
+        "title": "Desafío 5: Fibonacci",
+        "description": "Escribe una función que calcule los primeros n números de la secuencia de Fibonacci.",
+        "code": "List<int> fibonacci(int n) {\n  if (n <= 0) return [];\n  List<int> secuencia = [0, 1];\n  for (int i = 2; i < n; i++) {\n    secuencia.add(secuencia[i - 1] + secuencia[i - 2]);\n  }\n  return secuencia.sublist(0, n);\n}\n\nvoid main() {\n  print(fibonacci(10));\n}"
+      },
+      {
+        "id": 6,
+        "title": "Desafío 6: Verificar Palíndromo",
+        "description": "Escribe una función que determine si una cadena es un palíndromo.",
+        "code": "bool esPalindromo(String cadena) {\n  String limpia = cadena.replaceAll(RegExp(r'[^A-Za-z0-9]'), '').toLowerCase();\n  String invertida = limpia.split('').reversed.join('');\n  return limpia == invertida;\n}\n\nvoid main() {\n  print(esPalindromo('Anita lava la tina'));\n}"
+      },
+      {
+        "id": 7,
+        "title": "Desafío 7: Ordenar Lista de Mapas",
+        "description": "Escribe una función que ordene una lista de mapas por un valor específico.",
+        "code": "List<Map<String, dynamic>> ordenarPorValor(List<Map<String, dynamic>> lista, String clave) {\n  lista.sort((a, b) => a[clave].compareTo(b[clave]));\n  return lista;\n}\n\nvoid main() {\n  List<Map<String, dynamic>> lista = [\n    {'nombre': 'Carlos', 'edad': 28},\n    {'nombre': 'Ana', 'edad': 22},\n    {'nombre': 'Luis', 'edad': 35}\n  ];\n  print(ordenarPorValor(lista, 'edad'));\n}"
+      },
+      {
+        "id": 8,
+        "title": "Desafío 8: Generar Números Aleatorios",
+        "description": "Escribe una función que genere una lista de n números aleatorios entre un rango dado.",
+        "code": "import 'dart:math';\n\nList<int> generarNumerosAleatorios(int n, int min, int max) {\n  Random rand = Random();\n  List<int> numeros = [];\n  for (int i = 0; i < n; i++) {\n    numeros.add(min + rand.nextInt(max - min + 1));\n  }\n  return numeros;\n}\n\nvoid main() {\n  print(generarNumerosAleatorios(5, 1, 100));\n}"
+      },
+      {
+        "id": 9,
+        "title": "Desafío 9: Suma de Matrices",
+        "description": "Escribe una función que sume dos matrices de igual tamaño.",
+        "code": "List<List<int>> sumarMatrices(List<List<int>> matriz1, List<List<int>> matriz2) {\n  int filas = matriz1.length;\n  int columnas = matriz1[0].length;\n  List<List<int>> resultado = List.generate(filas, (i) => List.filled(columnas, 0));\n  for (int i = 0; i < filas; i++) {\n    for (int j = 0; j < columnas; j++) {\n      resultado[i][j] = matriz1[i][j] + matriz2[i][j];\n    }\n  }\n  return resultado;\n}\n\nvoid main() {\n  List<List<int>> matriz1 = [\n    [1, 2, 3],\n    [4, 5, 6],\n    [7, 8, 9]\n  ];\n  List<List<int>> matriz2 = [\n    [9, 8, 7],\n    [6, 5, 4],\n    [3, 2, 1]\n  ];\n  print(sumarMatrices(matriz1, matriz2));\n}"
+      },
+      {
+        "id": 10,
+        "title": "Desafío 10: Calcular Promedio",
+        "description": "Escribe una función que calcule el promedio de una lista de números.",
+        "code": "double calcularPromedio(List<int> numeros) {\n  int suma = numeros.reduce((a, b) => a + b);\n  return suma / numeros.length;\n}\n\nvoid main() {\n  print(calcularPromedio([1, 2, 3, 4, 5]));\n}"
+      },
+      {
+        "id": 11,
+        "title": "Desafío 11: Filtrar Números Pares",
+        "description": "Escribe una función que reciba una lista de números y devuelva solo los números pares.",
+        "code": "List<int> filtrarPares(List<int> numeros) {\n  return numeros.where((num) => num % 2 == 0).toList();\n}\n\nvoid main() {\n  print(filtrarPares([1, 2, 3, 4, 5, 6]));\n}"
+      },
+      {
+        "id": 12,
+        "title": "Desafío 12: Encontrar Mayor Número",
+        "description": "Escribe una función que encuentre el mayor número en una lista.",
+        "code": "int encontrarMayor(List<int> numeros) {\n  return numeros.reduce((a, b) => a > b ? a : b);\n}\n\nvoid main() {\n  print(encontrarMayor([1, 2, 3, 4, 5]));\n}"
+      },
+      {
+        "id": 13,
+        "title": "Desafío 13: Invertir Cadena",
+        "description": "Escribe una función que invierta una cadena de texto.",
+        "code": "String invertirCadena(String cadena) {\n  return cadena.split('').reversed.join('');\n}\n\nvoid main() {\n  print(invertirCadena('Hola Mundo'));\n}"
+      },
+      {
+        "id": 14,
+        "title": "Desafío 14: Contar Vocales",
+        "description": "Escribe una función que cuente el número de vocales en una cadena de texto.",
+        "code": "int contarVocales(String texto) {\n  const vocales = 'aeiouAEIOU';\n  return texto.split('').where((char) => vocales.contains(char)).length;\n}\n\nvoid main() {\n  print(contarVocales('Hola Mundo'));\n}"
+      },
+      {
+        "id": 15,
+        "title": "Desafío 15: Números Duplicados",
+        "description": "Escribe una función que reciba una lista de números y elimine los números duplicados.",
+        "code": "List<int> eliminarDuplicados(List<int> numeros) {\n  return numeros.toSet().toList();\n}\n\nvoid main() {\n  print(eliminarDuplicados([1, 2, 2, 3, 4, 4, 5]));\n}"
+      },
+      {
+        "id": 16,
+        "title": "Desafío 16: Producto de Elementos",
+        "description": "Escribe una función que calcule el producto de todos los elementos en una lista de números.",
+        "code": "int productoElementos(List<int> numeros) {\n  return numeros.reduce((producto, num) => producto * num);\n}\n\nvoid main() {\n  print(productoElementos([1, 2, 3, 4, 5]));\n}"
+      },
+      {
+        "id": 17,
+        "title": "Desafío 17: Ordenar Alfabéticamente",
+        "description": "Escribe una función que ordene una lista de palabras alfabéticamente.",
+        "code": "List<String> ordenarAlfabeticamente(List<String> palabras) {\n  palabras.sort();\n  return palabras;\n}\n\nvoid main() {\n  print(ordenarAlfabeticamente(['pera', 'manzana', 'banana']));\n}"
+      },
+      {
+        "id": 18,
+        "title": "Desafío 18: Crear Matriz Identidad",
+        "description": "Escribe una función que cree una matriz identidad de tamaño n.",
+        "code": "List<List<int>> crearMatrizIdentidad(int n) {\n  return List.generate(n, (i) => List.generate(n, (j) => i == j ? 1 : 0));\n}\n\nvoid main() {\n  print(crearMatrizIdentidad(3));\n}"
+      },
+      {
+        "id": 19,
+        "title": "Desafío 19: Encontrar la Palabra Más Larga",
+        "description": "Escribe una función que reciba una lista de palabras y devuelva la más larga.",
+        "code": "String encontrarPalabraMasLarga(List<String> palabras) {\n  return palabras.reduce((a, b) => a.length > b.length ? a : b);\n}\n\nvoid main() {\n  print(encontrarPalabraMasLarga(['pera', 'manzana', 'banana', 'sandia']));\n}"
+      },
+      {
+        "id": 20,
+        "title": "Desafío 20: Convertir a Título",
+        "description": "Escribe una función que convierta una cadena de texto a formato título, es decir, que la primera letra de cada palabra sea mayúscula.",
+        "code": "String convertirATitulo(String cadena) {\n  return cadena.split(' ').map((palabra) => palabra[0].toUpperCase() + palabra.substring(1)).join(' ');\n}\n\nvoid main() {\n  print(convertirATitulo('hola mundo desde dart'));\n}"
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "title": "Curso de C# - Desafíos Intermedios II",
+    "challenges": [
+      {
+        "id": 1,
+        "title": "Desafío 1: Suma de Pares e Impares",
+        "description": "Escribe un método que reciba una lista de números y devuelva la suma de los números pares e impares en dos variables separadas.",
+        "code": "using System;\nusing System.Collections.Generic;\n\nclass Program\n{\n    static (int sumaPares, int sumaImpares) SumarParesEImpares(List<int> numeros)\n    {\n        int sumaPares = 0;\n        int sumaImpares = 0;\n        foreach (var num in numeros)\n        {\n            if (num % 2 == 0)\n                sumaPares += num;\n            else\n                sumaImpares += num;\n        }\n        return (sumaPares, sumaImpares);\n    }\n\n    static void Main()\n    {\n        var resultado = SumarParesEImpares(new List<int> { 1, 2, 3, 4, 5, 6 });\n        Console.WriteLine($\"Suma de pares: {resultado.sumaPares}, Suma de impares: {resultado.sumaImpares}\");\n    }\n}"
+      },
+      {
+        "id": 2,
+        "title": "Desafío 2: Contar Caracteres",
+        "description": "Escribe un método que cuente la cantidad de veces que aparece cada carácter en una cadena.",
+        "code": "using System;\nusing System.Collections.Generic;\n\nclass Program\n{\n    static Dictionary<char, int> ContarCaracteres(string cadena)\n    {\n        var contador = new Dictionary<char, int>();\n        foreach (var c in cadena)\n        {\n            if (contador.ContainsKey(c))\n                contador[c]++;\n            else\n                contador[c] = 1;\n        }\n        return contador;\n    }\n\n    static void Main()\n    {\n        var resultado = ContarCaracteres(\"abracadabra\");\n        foreach (var kv in resultado)\n        {\n            Console.WriteLine($\"{kv.Key}: {kv.Value}\");\n        }\n    }\n}"
+      },
+      {
+        "id": 3,
+        "title": "Desafío 3: Generar Números Primos",
+        "description": "Escribe un método que genere una lista de números primos hasta un número dado.",
+        "code": "using System;\nusing System.Collections.Generic;\n\nclass Program\n{\n    static List<int> GenerarPrimos(int max)\n    {\n        var primos = new List<int>();\n        for (int num = 2; num <= max; num++)\n        {\n            bool esPrimo = true;\n            for (int div = 2; div <= Math.Sqrt(num); div++)\n            {\n                if (num % div == 0)\n                {\n                    esPrimo = false;\n                    break;\n                }\n            }\n            if (esPrimo)\n                primos.Add(num);\n        }\n        return primos;\n    }\n\n    static void Main()\n    {\n        var primos = GenerarPrimos(20);\n        Console.WriteLine(string.Join(\", \", primos));\n    }\n}"
+      },
+      {
+        "id": 4,
+        "title": "Desafío 4: Palabra Más Frecuente",
+        "description": "Escribe un método que encuentre la palabra más frecuente en una lista de palabras.",
+        "code": "using System;\nusing System.Collections.Generic;\nusing System.Linq;\n\nclass Program\n{\n    static string PalabraMasFrecuente(List<string> palabras)\n    {\n        return palabras.GroupBy(p => p)\n                        .OrderByDescending(g => g.Count())\n                        .First()\n                        .Key;\n    }\n\n    static void Main()\n    {\n        var palabras = new List<string> { \"apple\", \"banana\", \"apple\", \"orange\", \"banana\", \"apple\" };\n        Console.WriteLine(PalabraMasFrecuente(palabras));\n    }\n}"
+      },
+      {
+        "id": 5,
+        "title": "Desafío 5: Fibonacci",
+        "description": "Escribe un método que calcule los primeros n números de la secuencia de Fibonacci.",
+        "code": "using System;\nusing System.Collections.Generic;\n\nclass Program\n{\n    static List<int> Fibonacci(int n)\n    {\n        var secuencia = new List<int> { 0, 1 };\n        for (int i = 2; i < n; i++)\n        {\n            secuencia.Add(secuencia[i - 1] + secuencia[i - 2]);\n        }\n        return secuencia.GetRange(0, n);\n    }\n\n    static void Main()\n    {\n        var fib = Fibonacci(10);\n        Console.WriteLine(string.Join(\", \", fib));\n    }\n}"
+      },
+      {
+        "id": 6,
+        "title": "Desafío 6: Verificar Palíndromo",
+        "description": "Escribe un método que determine si una cadena es un palíndromo.",
+        "code": "using System;\n\nclass Program\n{\n    static bool EsPalindromo(string cadena)\n    {\n        var limpia = new string(cadena.Where(char.IsLetterOrDigit).ToArray()).ToLower();\n        var invertida = new string(limpia.Reverse().ToArray());\n        return limpia == invertida;\n    }\n\n    static void Main()\n    {\n        Console.WriteLine(EsPalindromo(\"Anita lava la tina\"));\n    }\n}"
+      },
+      {
+        "id": 7,
+        "title": "Desafío 7: Ordenar Lista de Diccionarios",
+        "description": "Escribe un método que ordene una lista de diccionarios por un valor específico.",
+        "code": "using System;\nusing System.Collections.Generic;\nusing System.Linq;\n\nclass Program\n{\n    static List<Dictionary<string, object>> OrdenarPorValor(List<Dictionary<string, object>> lista, string clave)\n    {\n        return lista.OrderBy(dict => dict[clave]).ToList();\n    }\n\n    static void Main()\n    {\n        var lista = new List<Dictionary<string, object>>\n        {\n            new Dictionary<string, object> { { \"nombre\", \"Carlos\" }, { \"edad\", 28 } },\n            new Dictionary<string, object> { { \"nombre\", \"Ana\" }, { \"edad\", 22 } },\n            new Dictionary<string, object> { { \"nombre\", \"Luis\" }, { \"edad\", 35 } }\n        };\n        var ordenada = OrdenarPorValor(lista, \"edad\");\n        foreach (var item in ordenada)\n        {\n            Console.WriteLine($\"Nombre: {item[\"nombre\"]}, Edad: {item[\"edad\"]}\");\n        }\n    }\n}"
+      },
+      {
+        "id": 8,
+        "title": "Desafío 8: Generar Números Aleatorios",
+        "description": "Escribe un método que genere una lista de n números aleatorios entre un rango dado.",
+        "code": "using System;\nusing System.Collections.Generic;\n\nclass Program\n{\n    static List<int> GenerarNumerosAleatorios(int n, int min, int max)\n    {\n        var rand = new Random();\n        var numeros = new List<int>();\n        for (int i = 0; i < n; i++)\n        {\n            numeros.Add(rand.Next(min, max + 1));\n        }\n        return numeros;\n    }\n\n    static void Main()\n    {\n        var aleatorios = GenerarNumerosAleatorios(5, 1, 100);\n        Console.WriteLine(string.Join(\", \", aleatorios));\n    }\n}"
+      },
+      {
+        "id": 9,
+        "title": "Desafío 9: Suma de Matrices",
+        "description": "Escribe un método que sume dos matrices de igual tamaño.",
+        "code": "using System;\nusing System.Collections.Generic;\n\nclass Program\n{\n    static int[,] SumarMatrices(int[,] matriz1, int[,] matriz2)\n    {\n        int filas = matriz1.GetLength(0);\n        int columnas = matriz1.GetLength(1);\n        var resultado = new int[filas, columnas];\n        for (int i = 0; i < filas; i++)\n        {\n            for (int j = 0; j < columnas; j++)\n            {\n                resultado[i, j] = matriz1[i, j] + matriz2[i, j];\n            }\n        }\n        return resultado;\n    }\n\n    static void Main()\n    {\n        var matriz1 = new int[,] { { 1, 2, 3 }, { 4, 5, 6 }, { 7, 8, 9 } };\n        var matriz2 = new int[,] { { 9, 8, 7 }, { 6, 5, 4 }, { 3, 2, 1 } };\n        var resultado = SumarMatrices(matriz1, matriz2);\n        for (int i = 0; i < resultado.GetLength(0); i++)\n        {\n            for (int j = 0; j < resultado.GetLength(1); j++)\n            {\n                Console.Write(resultado[i, j] + \" \");\n            }\n            Console.WriteLine();\n        }\n    }\n}"
+      },
+      {
+        "id": 10,
+        "title": "Desafío 10: Calcular Promedio",
+        "description": "Escribe un método que calcule el promedio de una lista de números.",
+        "code": "using System;\nusing System.Collections.Generic;\nusing System.Linq;\n\nclass Program\n{\n    static double CalcularPromedio(List<int> numeros)\n    {\n        return numeros.Average();\n    }\n\n    static void Main()\n    {\n        var promedio = CalcularPromedio(new List<int> { 1, 2, 3, 4, 5 });\n        Console.WriteLine(promedio);\n    }\n}"
+      },
+      {
+        "id": 11,
+        "title": "Desafío 11: Comprobar Anagramas",
+        "description": "Escribe un método que determine si dos cadenas son anagramas (tienen las mismas letras en diferente orden).",
+        "code": "using System;\nusing System.Linq;\n\nclass Program\n{\n    static bool SonAnagramas(string palabra1, string palabra2)\n    {\n        return palabra1.OrderBy(c => c).SequenceEqual(palabra2.OrderBy(c => c));\n    }\n\n    static void Main()\n    {\n        Console.WriteLine(SonAnagramas(\"listen\", \"silent\"));\n    }\n}"
+      },
+      {
+        "id": 12,
+        "title": "Desafío 12: Validar Correo Electrónico",
+        "description": "Escribe un método que valide si una cadena es una dirección de correo electrónico válida.",
+        "code": "using System;\nusing System.Text.RegularExpressions;\n\nclass Program\n{\n    static bool EsCorreoValido(string correo)\n    {\n        return Regex.IsMatch(correo, \"^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\\\\.[a-zA-Z]{2,}$\");\n    }\n\n    static void Main()\n    {\n        Console.WriteLine(EsCorreoValido(\"usuario@example.com\"));\n    }\n}"
+      },
+      {
+        "id": 13,
+        "title": "Desafío 13: Buscar Elemento en Lista",
+        "description": "Escribe un método que busque un elemento en una lista y devuelva su índice, o -1 si no se encuentra.",
+        "code": "using System;\nusing System.Collections.Generic;\n\nclass Program\n{\n    static int BuscarElemento(List<int> lista, int elemento)\n    {\n        return lista.IndexOf(elemento);\n    }\n\n    static void Main()\n    {\n        var lista = new List<int> { 1, 3, 5, 7, 9 };\n        Console.WriteLine(BuscarElemento(lista, 5));\n    }\n}"
+      },
+      {
+        "id": 14,
+        "title": "Desafío 14: Convertir Decimal a Binario",
+        "description": "Escribe un método que convierta un número decimal a su representación binaria.",
+        "code": "using System;\nusing System.Collections.Generic;\n\nclass Program\n{\n    static string DecimalABinario(int numero)\n    {\n        return Convert.ToString(numero, 2);\n    }\n\n    static void Main()\n    {\n        Console.WriteLine(DecimalABinario(10));\n    }\n}"
+      },
+      {
+        "id": 15,
+        "title": "Desafío 15: Suma de Matrices Diagonales",
+        "description": "Escribe un método que calcule la suma de los elementos en las diagonales principal y secundaria de una matriz cuadrada.",
+        "code": "using System;\n\nclass Program\n{\n    static int SumaDiagonales(int[,] matriz)\n    {\n        int n = matriz.GetLength(0);\n        int sumaPrincipal = 0;\n        int sumaSecundaria = 0;\n        for (int i = 0; i < n; i++)\n        {\n            sumaPrincipal += matriz[i, i];\n            sumaSecundaria += matriz[i, n - i - 1];\n        }\n        return sumaPrincipal + sumaSecundaria;\n    }\n\n    static void Main()\n    {\n        var matriz = new int[,] { { 1, 2, 3 }, { 4, 5, 6 }, { 7, 8, 9 } };\n        Console.WriteLine(SumaDiagonales(matriz));\n    }\n}"
+      },
+      {
+        "id": 16,
+        "title": "Desafío 16: Divisores de un Número",
+        "description": "Escribe un método que encuentre todos los divisores de un número entero positivo.",
+        "code": "using System;\nusing System.Collections.Generic;\n\nclass Program\n{\n    static List<int> Divisores(int numero)\n    {\n        var divisores = new List<int>();\n        for (int i = 1; i <= numero; i++)\n        {\n            if (numero % i == 0)\n                divisores.Add(i);\n        }\n        return divisores;\n    }\n\n    static void Main()\n    {\n        Console.WriteLine(string.Join(\", \", Divisores(12)));\n    }\n}"
+      },
+      {
+        "id": 17,
+        "title": "Desafío 17: Números Primos en un Rango",
+        "description": "Escribe un método que encuentre todos los números primos en un rango dado.",
+        "code": "using System;\nusing System.Collections.Generic;\n\nclass Program\n{\n    static List<int> PrimosEnRango(int inicio, int fin)\n    {\n        var primos = new List<int>();\n        for (int num = inicio; num <= fin; num++)\n        {\n            bool esPrimo = true;\n            for (int div = 2; div <= Math.Sqrt(num); div++)\n            {\n                if (num % div == 0)\n                {\n                    esPrimo = false;\n                    break;\n                }\n            }\n            if (esPrimo)\n                primos.Add(num);\n        }\n        return primos;\n    }\n\n    static void Main()\n    {\n        Console.WriteLine(string.Join(\", \", PrimosEnRango(1, 50)));\n    }\n}"
+      },
+      {
+        "id": 18,
+        "title": "Desafío 18: Multiplicación de Matrices",
+        "description": "Escribe un método que multiplique dos matrices y devuelva el resultado.",
+        "code": "using System;\n\nclass Program\n{\n    static int[,] MultiplicarMatrices(int[,] matriz1, int[,] matriz2)\n    {\n        int filas1 = matriz1.GetLength(0);\n        int columnas1 = matriz1.GetLength(1);\n        int columnas2 = matriz2.GetLength(1);\n        var resultado = new int[filas1, columnas2];\n        for (int i = 0; i < filas1; i++)\n        {\n            for (int j = 0; j < columnas2; j++)\n            {\n                for (int k = 0; k < columnas1; k++)\n                {\n                    resultado[i, j] += matriz1[i, k] * matriz2[k, j];\n                }\n            }\n        }\n        return resultado;\n    }\n\n    static void Main()\n    {\n        var matriz1 = new int[,] { { 1, 2 }, { 3, 4 } };\n        var matriz2 = new int[,] { { 5, 6 }, { 7, 8 } };\n        var resultado = MultiplicarMatrices(matriz1, matriz2);\n        for (int i = 0; i < resultado.GetLength(0); i++)\n        {\n            for (int j = 0; j < resultado.GetLength(1); j++)\n            {\n                Console.Write(resultado[i, j] + \" \");\n            }\n            Console.WriteLine();\n        }\n    }\n}"
+      },
+      {
+        "id": 19,
+        "title": "Desafío 19: Números Triangulares",
+        "description": "Escribe un método que genere una lista de los primeros n números triangulares.",
+        "code": "using System;\nusing System.Collections.Generic;\n\nclass Program\n{\n    static List<int> NumerosTriangulares(int n)\n    {\n        var triangulares = new List<int>();\n        for (int i = 1; i <= n; i++)\n        {\n            triangulares.Add((i * (i + 1)) / 2);\n        }\n        return triangulares;\n    }\n\n    static void Main()\n    {\n        Console.WriteLine(string.Join(\", \", NumerosTriangulares(10)));\n    }\n}"
+      },
+      {
+        "id": 20,
+        "title": "Desafío 20: Ordenar Lista de Cadenas",
+        "description": "Escribe un método que ordene una lista de cadenas alfabéticamente.",
+        "code": "using System;\nusing System.Collections.Generic;\nusing System.Linq;\n\nclass Program\n{\n    static List<string> OrdenarCadenas(List<string> cadenas)\n    {\n        return cadenas.OrderBy(c => c).ToList();\n    }\n\n    static void Main()\n    {\n        var cadenas = new List<string> { \"banana\", \"apple\", \"grape\", \"orange\" };\n        var ordenadas = OrdenarCadenas(cadenas);\n        foreach (var cadena in ordenadas)\n        {\n            Console.WriteLine(cadena);\n        }\n    }\n}"
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "title": "Curso  de Java - Desafíos Intermedios II",
+    "challenges": [
+      {
+        "id": 1,
+        "title": "Desafío 1: Contar Vocales",
+        "description": "Escribe un método que cuente el número de vocales en una cadena.",
+        "code": "public class Main {\n    static int contarVocales(String cadena) {\n        int contador = 0;\n        for (char c : cadena.toLowerCase().toCharArray()) {\n            if (c == 'a' || c == 'e' || c == 'i' || c == 'o' || c == 'u') {\n                contador++;\n            }\n        }\n        return contador;\n    }\n\n    public static void main(String[] args) {\n        String ejemplo = \"Hola Mundo\";\n        System.out.println(\"Número de vocales: \" + contarVocales(ejemplo));\n    }\n}"
+      },
+      {
+        "id": 2,
+        "title": "Desafío 2: Suma de Dígitos",
+        "description": "Escribe un método que calcule la suma de los dígitos de un número entero.",
+        "code": "public class Main {\n    static int sumaDigitos(int numero) {\n        int suma = 0;\n        while (numero != 0) {\n            suma += numero % 10;\n            numero /= 10;\n        }\n        return suma;\n    }\n\n    public static void main(String[] args) {\n        int numero = 12345;\n        System.out.println(\"Suma de dígitos: \" + sumaDigitos(numero));\n    }\n}"
+      },
+      {
+        "id": 3,
+        "title": "Desafío 3: Palíndromo",
+        "description": "Escribe un método que determine si una cadena es un palíndromo.",
+        "code": "public class Main {\n    static boolean esPalindromo(String cadena) {\n        cadena = cadena.replaceAll(\"[^a-zA-Z0-9]\", \"\").toLowerCase();\n        return new StringBuilder(cadena).reverse().toString().equals(cadena);\n    }\n\n    public static void main(String[] args) {\n        String ejemplo = \"Anita lava la tina\";\n        System.out.println(\"¿Es palíndromo? \" + esPalindromo(ejemplo));\n    }\n}"
+      },
+      {
+        "id": 4,
+        "title": "Desafío 4: Números Primos",
+        "description": "Escribe un método que determine si un número entero positivo es primo.",
+        "code": "public class Main {\n    static boolean esPrimo(int numero) {\n        if (numero <= 1) {\n            return false;\n        }\n        for (int i = 2; i <= Math.sqrt(numero); i++) {\n            if (numero % i == 0) {\n                return false;\n            }\n        }\n        return true;\n    }\n\n    public static void main(String[] args) {\n        int numero = 17;\n        System.out.println(\"¿Es primo? \" + esPrimo(numero));\n    }\n}"
+      },
+      {
+        "id": 5,
+        "title": "Desafío 5: Contar Palabras",
+        "description": "Escribe un método que cuente el número de palabras en una cadena.",
+        "code": "public class Main {\n    static int contarPalabras(String cadena) {\n        if (cadena == null || cadena.isEmpty()) {\n            return 0;\n        }\n        String[] palabras = cadena.split(\"\\\\s+\");\n        return palabras.length;\n    }\n\n    public static void main(String[] args) {\n        String ejemplo = \"Esto es una cadena de ejemplo\";\n        System.out.println(\"Número de palabras: \" + contarPalabras(ejemplo));\n    }\n}"
+      },
+      {
+        "id": 6,
+        "title": "Desafío 6: Suma de Matrices",
+        "description": "Escribe un método que sume dos matrices de enteros y devuelva el resultado.",
+        "code": "public class Main {\n    static int[][] sumarMatrices(int[][] matriz1, int[][] matriz2) {\n        int filas = matriz1.length;\n        int columnas = matriz1[0].length;\n        int[][] resultado = new int[filas][columnas];\n        for (int i = 0; i < filas; i++) {\n            for (int j = 0; j < columnas; j++) {\n                resultado[i][j] = matriz1[i][j] + matriz2[i][j];\n            }\n        }\n        return resultado;\n    }\n\n    public static void main(String[] args) {\n        int[][] matriz1 = {{1, 2}, {3, 4}};\n        int[][] matriz2 = {{5, 6}, {7, 8}};\n        int[][] resultado = sumarMatrices(matriz1, matriz2);\n        for (int[] fila : resultado) {\n            for (int elemento : fila) {\n                System.out.print(elemento + \" \");\n            }\n            System.out.println();\n        }\n    }\n}"
+      },
+      {
+        "id": 7,
+        "title": "Desafío 7: Invertir Cadena",
+        "description": "Escribe un método que invierta una cadena de caracteres.",
+        "code": "public class Main {\n    static String invertirCadena(String cadena) {\n        return new StringBuilder(cadena).reverse().toString();\n    }\n\n    public static void main(String[] args) {\n        String ejemplo = \"Java es genial\";\n        System.out.println(\"Cadena invertida: \" + invertirCadena(ejemplo));\n    }\n}"
+      },
+      {
+        "id": 8,
+        "title": "Desafío 8: Factorial",
+        "description": "Escribe un método que calcule el factorial de un número entero positivo.",
+        "code": "public class Main {\n    static int factorial(int n) {\n        if (n == 0) {\n            return 1;\n        }\n        return n * factorial(n - 1);\n    }\n\n    public static void main(String[] args) {\n        int numero = 5;\n        System.out.println(\"Factorial de \" + numero + \": \" + factorial(numero));\n    }\n}"
+      },
+      {
+        "id": 9,
+        "title": "Desafío 9: Comprobar Pangrama",
+        "description": "Escribe un método que determine si una cadena es un pangrama (contiene todas las letras del alfabeto al menos una vez).",
+        "code": "public class Main {\n    static boolean esPangrama(String cadena) {\n        cadena = cadena.toLowerCase();\n        for (char letra = 'a'; letra <= 'z'; letra++) {\n            if (cadena.indexOf(letra) == -1) {\n                return false;\n            }\n        }\n        return true;\n    }\n\n    public static void main(String[] args) {\n        String ejemplo = \"El veloz murciélago hindú comía feliz cardillo y kiwi\";\n        System.out.println(\"¿Es pangrama? \" + esPangrama(ejemplo));\n    }\n}"
+      },
+      {
+        "id": 10,
+        "title": "Desafío 10: Contar Caracteres Únicos",
+        "description": "Escribe un método que cuente el número de caracteres únicos en una cadena.",
+        "code": "public class Main {\n    static int contarCaracteresUnicos(String cadena) {\n        return (int) cadena.chars().distinct().count();\n    }\n\n    public static void main(String[] args) {\n        String ejemplo = \"abracadabra\";\n        System.out.println(\"Número de caracteres únicos: \" + contarCaracteresUnicos(ejemplo));\n    }\n}"
+      },
+      {
+        "id": 11,
+        "title": "Desafío 11: Suma de Números Primos",
+        "description": "Escribe un método que calcule la suma de los primeros n números primos.",
+        "code": "public class Main {\n    static boolean esPrimo(int numero) {\n        if (numero <= 1) {\n            return false;\n        }\n        for (int i = 2; i <= Math.sqrt(numero); i++) {\n            if (numero % i == 0) {\n                return false;\n            }\n        }\n        return true;\n    }\n\n    static int sumaPrimos(int n) {\n        int suma = 0;\n        int contador = 0;\n        int numero = 2;\n        while (contador < n) {\n            if (esPrimo(numero)) {\n                suma += numero;\n                contador++;\n            }\n            numero++;\n        }\n        return suma;\n    }\n\n    public static void main(String[] args) {\n        int n = 5;\n        System.out.println(\"Suma de los primeros \" + n + \" números primos: \" + sumaPrimos(n));\n    }\n}"
+      },
+      {
+        "id": 12,
+        "title": "Desafío 12: Duplicados en una Lista",
+        "description": "Escribe un método que encuentre los elementos duplicados en una lista de enteros.",
+        "code": "import java.util.*;\n\npublic class Main {\n    static Set<Integer> encontrarDuplicados(List<Integer> lista) {\n        Set<Integer> duplicados = new HashSet<>();\n        Set<Integer> unicos = new HashSet<>();\n        for (int elemento : lista) {\n            if (!unicos.add(elemento)) {\n                duplicados.add(elemento);\n            }\n        }\n        return duplicados;\n    }\n\n    public static void main(String[] args) {\n        List<Integer> lista = Arrays.asList(1, 2, 3, 4, 1, 5, 6, 2);\n        System.out.println(\"Duplicados en la lista: \" + encontrarDuplicados(lista));\n    }\n}"
+      },
+      {
+        "id": 13,
+        "title": "Desafío 13: Números Armstrong",
+        "description": "Escribe un método que encuentre y devuelva todos los números de Armstrong en un rango dado.",
+        "code": "public class Main {\n    static boolean esNumeroArmstrong(int numero) {\n        int suma = 0;\n        int n = numero;\n        int digitos = String.valueOf(numero).length();\n        while (n != 0) {\n            int digito = n % 10;\n            suma += Math.pow(digito, digitos);\n            n /= 10;\n        }\n        return suma == numero;\n    }\n\n    static void numerosArmstrongEnRango(int inicio, int fin) {\n        for (int i = inicio; i <= fin; i++) {\n            if (esNumeroArmstrong(i)) {\n                System.out.println(i);\n            }\n        }\n    }\n\n    public static void main(String[] args) {\n        numerosArmstrongEnRango(100, 1000);\n    }\n}"
+      },
+      {
+        "id": 14,
+        "title": "Desafío 14: Contar Caracteres",
+        "description": "Escribe un método que cuente el número de ocurrencias de cada carácter en una cadena.",
+        "code": "import java.util.*;\n\npublic class Main {\n    static Map<Character, Integer> contarCaracteres(String cadena) {\n        Map<Character, Integer> conteo = new HashMap<>();\n        for (char c : cadena.toCharArray()) {\n            conteo.put(c, conteo.getOrDefault(c, 0) + 1);\n        }\n        return conteo;\n    }\n\n    public static void main(String[] args) {\n        String ejemplo = \"abracadabra\";\n        Map<Character, Integer> conteo = contarCaracteres(ejemplo);\n        System.out.println(\"Número de ocurrencias por carácter: \" + conteo);\n    }\n}"
+      },
+      {
+        "id": 15,
+        "title": "Desafío 15: Potencia de 2",
+        "description": "Escribe un método que compruebe si un número entero positivo es una potencia de 2.",
+        "code": "public class Main {\n    static boolean esPotenciaDeDos(int numero) {\n        return (numero & (numero - 1)) == 0 && numero != 0;\n    }\n\n    public static void main(String[] args) {\n        int numero = 16;\n        System.out.println(\"¿Es potencia de 2? \" + esPotenciaDeDos(numero));\n    }\n}"
+      },
+      {
+        "id": 16,
+        "title": "Desafío 16: Matriz Espiral",
+        "description": "Escribe un método que genere una matriz espiral de tamaño nxn.",
+        "code": "public class Main {\n    static void imprimirMatriz(int[][] matriz) {\n        for (int i = 0; i < matriz.length; i++) {\n            for (int j = 0; j < matriz[i].length; j++) {\n                System.out.print(matriz[i][j] + \"\\t\");\n            }\n            System.out.println();\n        }\n    }\n\n    static int[][] matrizEspiral(int n) {\n        int[][] matriz = new int[n][n];\n        int valor = 1;\n        int filaInicio = 0;\n        int filaFin = n - 1;\n        int columnaInicio = 0;\n        int columnaFin = n - 1;\n        while (valor <= n * n) {\n            for (int i = columnaInicio; i <= columnaFin; i++) {\n                matriz[filaInicio][i] = valor++;\n            }\n            filaInicio++;\n            for (int i = filaInicio; i <= filaFin; i++) {\n                matriz[i][columnaFin] = valor++;\n            }\n            columnaFin--;\n            for (int i = columnaFin; i >= columnaInicio; i--) {\n                matriz[filaFin][i] = valor++;\n            }\n            filaFin--;\n            for (int i = filaFin; i >= filaInicio; i--) {\n                matriz[i][columnaInicio] = valor++;\n            }\n            columnaInicio++;\n        }\n        return matriz;\n    }\n\n    public static void main(String[] args) {\n        int n = 5;\n        int[][] matriz = matrizEspiral(n);\n        imprimirMatriz(matriz);\n    }\n}"
+      },
+      {
+        "id": 17,
+        "title": "Desafío 17: Contar Subcadenas",
+        "description": "Escribe un método que cuente el número de subcadenas no vacías de una cadena dada.",
+        "code": "public class Main {\n    static int contarSubcadenas(String cadena) {\n        int n = cadena.length();\n        return n * (n + 1) / 2;\n    }\n\n    public static void main(String[] args) {\n        String ejemplo = \"abc\";\n        System.out.println(\"Número de subcadenas: \" + contarSubcadenas(ejemplo));\n    }\n}"
+      },
+      {
+        "id": 18,
+        "title": "Desafío 18: Comprobar Anagramas",
+        "description": "Escribe un método que determine si dos cadenas son anagramas entre sí.",
+        "code": "import java.util.Arrays;\n\npublic class Main {\n    static boolean sonAnagramas(String cadena1, String cadena2) {\n        char[] c1 = cadena1.replaceAll(\"\\\\s\", \"\").toLowerCase().toCharArray();\n        char[] c2 = cadena2.replaceAll(\"\\\\s\", \"\").toLowerCase().toCharArray();\n        Arrays.sort(c1);\n        Arrays.sort(c2);\n        return Arrays.equals(c1, c2);\n    }\n\n    public static void main(String[] args) {\n        String cadena1 = \"listen\";\n        String cadena2 = \"silent\";\n        System.out.println(\"¿Son anagramas? \" + sonAnagramas(cadena1, cadena2));\n    }\n}"
+      },
+      {
+        "id": 19,
+        "title": "Desafío 19: Cadena Rotada",
+        "description": "Escribe un método que determine si una cadena es una rotación de otra.",
+        "code": "public class Main {\n    static boolean esCadenaRotada(String cadena1, String cadena2) {\n        if (cadena1.length() != cadena2.length()) {\n            return false;\n        }\n        String concatenada = cadena1 + cadena1;\n        return concatenada.contains(cadena2);\n    }\n\n    public static void main(String[] args) {\n        String cadena1 = \"java\";\n        String cadena2 = \"avaj\";\n        System.out.println(\"¿Es cadena rotada? \" + esCadenaRotada(cadena1, cadena2));\n    }\n}"
+      },
+      {
+        "id": 20,
+        "title": "Desafío 20: Contar Palabras Palíndromas",
+        "description": "Escribe un método que cuente el número de palabras palíndromas en una frase.",
+        "code": "public class Main {\n    static boolean esPalindromo(String palabra) {\n        return new StringBuilder(palabra).reverse().toString().equalsIgnoreCase(palabra);\n    }\n\n    static int contarPalindromos(String frase) {\n        String[] palabras = frase.split(\"\\\\s+\");\n        int contador = 0;\n        for (String palabra : palabras) {\n            if (esPalindromo(palabra)) {\n                contador++;\n            }\n        }\n        return contador;\n    }\n\n    public static void main(String[] args) {\n        String frase = \"La ruta nos aporto otro paso natural\";\n        System.out.println(\"Número de palabras palíndromas: \" + contarPalindromos(frase));\n    }\n}"
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "title": "Curso de PHP - Desafios Intermedios II",
+    "challenges": [
+      {
+        "id": 1,
+        "title": "Desafío 1: Validar Correo Electrónico",
+        "description": "Escribe una función que valide si una dirección de correo electrónico es válida según ciertos criterios (por ejemplo, debe contener un símbolo '@' y un dominio válido).",
+        "code": "<?php\nfunction validarCorreo($correo) {\n    return filter_var($correo, FILTER_VALIDATE_EMAIL) !== false;\n}\n\n$correo1 = 'usuario@example.com';\n$correo2 = 'correo@dominio';\n\necho 'Correo 1 válido: ' . (validarCorreo($correo1) ? 'Sí' : 'No') . '\\n';\necho 'Correo 2 válido: ' . (validarCorreo($correo2) ? 'Sí' : 'No') . '\\n';\n?>"
+      },
+      {
+        "id": 2,
+        "title": "Desafío 2: Generar Contraseña Aleatoria",
+        "description": "Escribe una función que genere una contraseña aleatoria de una longitud específica.",
+        "code": "<?php\nfunction generarContrasena($longitud) {\n    $caracteres = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ';\n    $longitudCaracteres = strlen($caracteres);\n    $contrasena = '';\n    for ($i = 0; $i < $longitud; $i++) {\n        $indice = rand(0, $longitudCaracteres - 1);\n        $contrasena .= $caracteres[$indice];\n    }\n    return $contrasena;\n}\n\necho 'Contraseña generada: ' . generarContrasena(8);\n?>"
+      },
+      {
+        "id": 3,
+        "title": "Desafío 3: Contar Palabras en un Texto",
+        "description": "Escribe una función que cuente el número de palabras en un texto dado.",
+        "code": "<?php\nfunction contarPalabras($texto) {\n    $palabras = str_word_count($texto);\n    return $palabras;\n}\n\necho 'Número de palabras: ' . contarPalabras('Este es un ejemplo de texto con varias palabras.');\n?>"
+      },
+      {
+        "id": 4,
+        "title": "Desafío 4: Encontrar el Número Más Grande",
+        "description": "Escribe una función que encuentre el número más grande en un arreglo de números.",
+        "code": "<?php\nfunction encontrarMaximo($numeros) {\n    return max($numeros);\n}\n\n$numeros = [10, 5, 20, 8, 15];\necho 'Número más grande: ' . encontrarMaximo($numeros);\n?>"
+      },
+      {
+        "id": 5,
+        "title": "Desafío 5: Calcular Factorial",
+        "description": "Escribe una función que calcule el factorial de un número dado.",
+        "code": "<?php\nfunction factorial($n) {\n    if ($n === 0 || $n === 1) {\n        return 1;\n    }\n    return $n * factorial($n - 1);\n}\n\necho 'Factorial de 5: ' . factorial(5);\n?>"
+      },
+      {
+        "id": 6,
+        "title": "Desafío 6: Ordenar un Arreglo de Números",
+        "description": "Escribe una función que ordene un arreglo de números de forma ascendente.",
+        "code": "<?php\nfunction ordenarNumeros($numeros) {\n    sort($numeros);\n    return $numeros;\n}\n\n$numeros = [5, 2, 8, 1, 9];\necho 'Arreglo ordenado: ' . implode(', ', ordenarNumeros($numeros));\n?>"
+      },
+      {
+        "id": 7,
+        "title": "Desafío 7: Revertir una Cadena de Texto",
+        "description": "Escribe una función que revierta una cadena de texto.",
+        "code": "<?php\nfunction revertirCadena($cadena) {\n    return strrev($cadena);\n}\n\necho 'Cadena revertida: ' . revertirCadena('¡Hola mundo!');\n?>"
+      },
+      {
+        "id": 8,
+        "title": "Desafío 8: Calcular el Promedio de un Arreglo",
+        "description": "Escribe una función que calcule el promedio de un arreglo de números.",
+        "code": "<?php\nfunction calcularPromedio($numeros) {\n    $cantidad = count($numeros);\n    if ($cantidad === 0) {\n        return 0;\n    }\n    $suma = array_sum($numeros);\n    return $suma / $cantidad;\n}\n\n$numeros = [10, 20, 30, 40, 50];\necho 'Promedio: ' . calcularPromedio($numeros);\n?>"
+      },
+      {
+        "id": 9,
+        "title": "Desafío 9: Encontrar el Número Menor",
+        "description": "Escribe una función que encuentre el número menor en un arreglo de números.",
+        "code": "<?php\nfunction encontrarMinimo($numeros) {\n    return min($numeros);\n}\n\n$numeros = [10, 5, 20, 8, 15];\necho 'Número más pequeño: ' . encontrarMinimo($numeros);\n?>"
+      },
+      {
+        "id": 10,
+        "title": "Desafío 10: Verificar si una Palabra es Palíndromo",
+        "description": "Escribe una función que verifique si una palabra dada es un palíndromo.",
+        "code": "<?php\nfunction esPalindromo($palabra) {\n    $palabra = strtolower(preg_replace('/[^a-zA-Z0-9]/', '', $palabra));\n    return $palabra === strrev($palabra);\n}\n\necho '¿Es palíndromo reconocer?: ' . (esPalindromo('reconocer') ? 'Sí' : 'No');\n?>"
+      },
+      {
+        "id": 11,
+        "title": "Desafío 11: Contar Vocales y Consonantes",
+        "description": "Escribe una función que cuente el número de vocales y consonantes en una cadena de texto dada.",
+        "code": "<?php\nfunction contarVocalesConsonantes($cadena) {\n    $vocales = preg_match_all('/[aeiou]/i', $cadena, $matches);\n    $consonantes = preg_match_all('/[bcdfghjklmnpqrstvwxyz]/i', $cadena, $matches);\n    return ['vocales' => $vocales, 'consonantes' => $consonantes];\n}\n\necho 'Vocales: ' . contarVocalesConsonantes('Hola Mundo')['vocales'] . '\\n';\necho 'Consonantes: ' . contarVocalesConsonantes('Hola Mundo')['consonantes'] . '\\n';\n?>"
+      },
+      {
+        "id": 12,
+        "title": "Desafío 12: Calcular el Área de un Triángulo",
+        "description": "Escribe una función que calcule el área de un triángulo dado su base y altura.",
+        "code": "<?php\nfunction calcularAreaTriangulo($base, $altura) {\n    return ($base * $altura) / 2;\n}\n\necho 'Área del triángulo: ' . calcularAreaTriangulo(5, 3);\n?>"
+      },
+      {
+        "id": 13,
+        "title": "Desafío 13: Verificar si un Número es Primo",
+        "description": "Escribe una función que verifique si un número dado es primo.",
+        "code": "<?php\nfunction esPrimo($numero) {\n    if ($numero <= 1) {\n        return false;\n    }\n    for ($i = 2; $i <= sqrt($numero); $i++) {\n        if ($numero % $i === 0) {\n            return false;\n        }\n    }\n    return true;\n}\n\necho '¿Es primo el número 7?: ' . (esPrimo(7) ? 'Sí' : 'No');\n?>"
+      },
+      {
+        "id": 14,
+        "title": "Desafío 14: Calcular la Suma de los Dígitos de un Número",
+        "description": "Escribe una función que calcule la suma de los dígitos de un número entero dado.",
+        "code": "<?php\nfunction sumaDigitos($numero) {\n    $suma = 0;\n    while ($numero > 0) {\n        $suma += $numero % 10;\n        $numero = (int)($numero / 10);\n    }\n    return $suma;\n}\n\necho 'Suma de los dígitos de 12345: ' . sumaDigitos(12345);\n?>"
+      },
+      {
+        "id": 15,
+        "title": "Desafío 15: Generar una Serie Fibonacci",
+        "description": "Escribe una función que genere una serie Fibonacci hasta un número dado de términos.",
+        "code": "<?php\nfunction fibonacci($n) {\n    $serie = [0, 1];\n    for ($i = 2; $i < $n; $i++) {\n        $serie[$i] = $serie[$i - 1] + $serie[$i - 2];\n    }\n    return $serie;\n}\n\necho 'Serie Fibonacci: ' . implode(', ', fibonacci(10));\n?>"
+      },
+      {
+        "id": 16,
+        "title": "Desafío 16: Generar un Histograma de Caracteres",
+        "description": "Escribe una función que genere un histograma de caracteres a partir de una cadena de texto dada, mostrando la frecuencia de cada carácter.",
+        "code": "<?php\nfunction generarHistograma($cadena) {\n    $histograma = [];\n    $caracteres = str_split($cadena);\n    foreach ($caracteres as $caracter) {\n        if (!isset($histograma[$caracter])) {\n            $histograma[$caracter] = 1;\n        } else {\n            $histograma[$caracter]++;\n        }\n    }\n    return $histograma;\n}\n\n$cadena = 'abracadabra';\n$histograma = generarHistograma($cadena);\nforeach ($histograma as $caracter => $frecuencia) {\n    echo \"$caracter: $frecuencia\\n\";\n}\n?>"
+      },
+      {
+        "id": 17,
+        "title": "Desafío 17: Calcular el Máximo Común Divisor (MCD)",
+        "description": "Escribe una función que calcule el máximo común divisor (MCD) de dos números enteros dados.",
+        "code": "<?php\nfunction mcd($a, $b) {\n    while ($b !== 0) {\n        $temp = $b;\n        $b = $a % $b;\n        $a = $temp;\n    }\n    return $a;\n}\n\necho 'MCD de 24 y 36: ' . mcd(24, 36);\n?>"
+      },
+      {
+        "id": 18,
+        "title": "Desafío 18: Calcular la Potencia de un Número",
+        "description": "Escribe una función que calcule la potencia de un número dado (base elevada a la potencia).",
+        "code": "<?php\nfunction potencia($base, $exponente) {\n    return pow($base, $exponente);\n}\n\necho 'Potencia de 2 elevado a 5: ' . potencia(2, 5);\n?>"
+      },
+      {
+        "id": 19,
+        "title": "Desafío 19: Validar una Fecha",
+        "description": "Escribe una función que valide si una fecha dada (en formato 'YYYY-MM-DD') es válida.",
+        "code": "<?php\nfunction validarFecha($fecha) {\n    return (bool)strtotime($fecha);\n}\n\necho '¿Es válida la fecha 2022-05-30?: ' . (validarFecha('2022-05-30') ? 'Sí' : 'No');\n?>"
+      },
+      {
+        "id": 20,
+        "title": "Desafío 20: Calcular el Área de un Círculo",
+        "description": "Escribe una función que calcule el área de un círculo dado su radio.",
+        "code": "<?php\nfunction calcularAreaCirculo($radio) {\n    return pi() * pow($radio, 2);\n}\n\necho 'Área del círculo con radio 5: ' . calcularAreaCirculo(5);\n?>"
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "title": "Curso de CSS",
+    "challenges": [
+      {
+        "id": 1,
+        "title": "Desafío 1: Estilizar un Botón",
+        "description": "Crea un estilo CSS para hacer que un botón se vea atractivo y destacado en una página web.",
+        "code": "/* CSS para estilizar un botón */\n\n.button {\n  background-color: #4CAF50;\n  border: none;\n  color: white;\n  padding: 15px 32px;\n  text-align: center;\n  text-decoration: none;\n  display: inline-block;\n  font-size: 16px;\n  margin: 4px 2px;\n  cursor: pointer;\n  border-radius: 8px;\n}"
+      },
+      {
+        "id": 2,
+        "title": "Desafío 2: Diseñar un Menú de Navegación",
+        "description": "Crea un estilo CSS para un menú de navegación horizontal con enlaces que se resalten al pasar el cursor sobre ellos.",
+        "code": "/* CSS para un menú de navegación */\n\n.navbar {\n  overflow: hidden;\n  background-color: #333;\n}\n\n.navbar a {\n  float: left;\n  display: block;\n  color: #f2f2f2;\n  text-align: center;\n  padding: 14px 20px;\n  text-decoration: none;\n}\n\n.navbar a:hover {\n  background-color: #ddd;\n  color: black;\n}"
+      },
+      {
+        "id": 3,
+        "title": "Desafío 3: Crear un Diseño de Cuadrícula",
+        "description": "Utiliza CSS Grid o Flexbox para crear un diseño de cuadrícula responsivo que muestre una serie de elementos en filas y columnas.",
+        "code": "/* CSS para un diseño de cuadrícula */\n\n.grid-container {\n  display: grid;\n  grid-template-columns: auto auto auto;\n  background-color: #2196F3;\n  padding: 10px;\n}\n\n.grid-item {\n  background-color: rgba(255, 255, 255, 0.8);\n  border: 1px solid rgba(0, 0, 0, 0.8);\n  padding: 20px;\n  font-size: 30px;\n  text-align: center;\n}"
+      },
+      {
+        "id": 4,
+        "title": "Desafío 4: Estilizar una Lista de Elementos",
+        "description": "Crea un estilo CSS para una lista de elementos (por ejemplo, una lista de productos o elementos de menú) que resalte cada elemento individualmente y tenga un aspecto atractivo.",
+        "code": "/* CSS para estilizar una lista de elementos */\n\n.item-list {\n  list-style-type: none;\n  margin: 0;\n  padding: 0;\n}\n\n.item {\n  background-color: #f2f2f2;\n  padding: 20px;\n  margin-bottom: 10px;\n  border-radius: 8px;\n}\n\n.item:hover {\n  background-color: #ddd;\n}"
+      },
+      {
+        "id": 5,
+        "title": "Desafío 5: Crear un Diseño de Tarjeta",
+        "description": "Utiliza CSS para diseñar una tarjeta de contenido que muestre información de manera atractiva y organizada, con sombras y bordes redondeados.",
+        "code": "/* CSS para un diseño de tarjeta */\n\ncard {\n  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);\n  transition: 0.3s;\n  width: 300px;\n}\n\ncard:hover {\n  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);\n}\n\ncard-container {\n  padding: 2px 16px;\n}"
+      },
+      {
+        "id": 6,
+        "title": "Desafío 6: Crear un Efecto de Hover para Imágenes",
+        "description": "Utiliza CSS para crear un efecto de hover sobre las imágenes que las haga agrandarse ligeramente y mostrar una sombra.",
+        "code": "/* CSS para un efecto de hover sobre imágenes */\n\nimg {\n  transition: transform 0.3s ease;\n}\n\nimg:hover {\n  transform: scale(1.1);\n  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);\n}"
+      },
+      {
+        "id": 7,
+        "title": "Desafío 7: Diseñar una Barra de Progreso",
+        "description": "Crea un estilo CSS para una barra de progreso que muestre visualmente el progreso de una tarea.",
+        "code": "/* CSS para una barra de progreso */\n\n.progress {\n  width: 100%;\n  background-color: #f2f2f2;\n}\n\n.bar {\n  width: 0%;\n  height: 30px;\n  background-color: #4CAF50;\n  text-align: center;\n  line-height: 30px;\n  color: white;\n}\n\n/* Modificar la clase 'bar' para actualizar el progreso */\n.bar-70 {\n  width: 70%;\n}"
+      },
+      {
+        "id": 8,
+        "title": "Desafío 8: Estilizar un Formulario",
+        "description": "Crea un estilo CSS para un formulario web que haga que los campos de entrada, botones y otros elementos se vean atractivos y fáciles de usar.",
+        "code": "/* CSS para estilizar un formulario */\n\nform {\n  background-color: #f2f2f2;\n  padding: 20px;\n  border-radius: 8px;\n}\n\ninput[type=text], select {\n  width: 100%;\n  padding: 12px 20px;\n  margin: 8px 0;\n  display: inline-block;\n  border: 1px solid #ccc;\n  border-radius: 4px;\n  box-sizing: border-box;\n}\n\ninput[type=submit] {\n  width: 100%;\n  background-color: #4CAF50;\n  color: white;\n  padding: 14px 20px;\n  margin: 8px 0;\n  border: none;\n  border-radius: 4px;\n  cursor: pointer;\n}"
+      },
+      {
+        "id": 9,
+        "title": "Desafío 9: Crear un Diseño de Cuadrícula con Flexbox",
+        "description": "Utiliza Flexbox para crear un diseño de cuadrícula que se adapte a diferentes tamaños de pantalla y dispositivos.",
+        "code": "/* CSS para un diseño de cuadrícula con Flexbox */\n\n.container {\n  display: flex;\n  flex-wrap: wrap;\n}\n\n.item {\n  flex: 1 0 200px;\n  margin: 10px;\n  text-align: center;\n  background-color: #f2f2f2;\n  padding: 20px;\n}"
+      },
+      {
+        "id": 10,
+        "title": "Desafío 10: Crear un Menú Desplegable",
+        "description": "Utiliza CSS para crear un menú desplegable que se active al pasar el cursor sobre él y que muestre opciones adicionales.",
+        "code": "/* CSS para un menú desplegable */\n\n.dropdown {\n  position: relative;\n  display: inline-block;\n}\n\n.dropdown-content {\n  display: none;\n  position: absolute;\n  background-color: #f9f9f9;\n  min-width: 160px;\n  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);\n  z-index: 1;\n}\n\n.dropdown:hover .dropdown-content {\n  display: block;\n}\n\n.dropdown-content a {\n  color: black;\n  padding: 12px 16px;\n  text-decoration: none;\n  display: block;\n  text-align: left;\n}\n\n.dropdown-content a:hover {\n  background-color: #f1f1f1;\n}"
+      },
+      {
+        "id": 11,
+        "title": "Desafío 11: Crear un Slider de Imágenes",
+        "description": "Utiliza CSS para diseñar un slider de imágenes que muestre varias imágenes en un carrusel con botones de navegación.",
+        "code": "/* CSS para un slider de imágenes */\n\n.slider {\n  position: relative;\n  max-width: 100%;\n  margin: auto;\n}\n\n.slide {\n  display: none;\n  position: absolute;\n  width: 100%;\n  height: auto;\n}\n\n.prev, .next {\n  position: absolute;\n  top: 50%;\n  width: auto;\n  padding: 16px;\n  margin-top: -22px;\n  color: white;\n  font-weight: bold;\n  font-size: 20px;\n  transition: 0.6s ease;\n  border-radius: 0 3px 3px 0;\n}\n\n.next {\n  right: 0;\n  border-radius: 3px 0 0 3px;\n}\n\n.prev:hover, .next:hover {\n  background-color: rgba(0, 0, 0, 0.8);\n}\n\n.fade {\n  animation-name: fade;\n  animation-duration: 1.5s;\n}\n\n@keyframes fade {\n  from {opacity: .4}\n  to {opacity: 1}\n}"
+      },
+      {
+        "id": 12,
+        "title": "Desafío 12: Estilizar una Tabla de Datos",
+        "description": "Crea un estilo CSS para una tabla de datos que haga que sea fácil de leer y comprenda, con colores alternados para las filas y resaltado de la fila seleccionada.",
+        "code": "/* CSS para estilizar una tabla de datos */\n\ntable {\n  font-family: Arial, sans-serif;\n  border-collapse: collapse;\n  width: 100%;\n}\n\ntd, th {\n  border: 1px solid #dddddd;\n  text-align: left;\n  padding: 8px;\n}\n\ntr:nth-child(even) {\n  background-color: #f2f2f2;\n}\n\n.selected {\n  background-color: #dddddd;\n}"
+      },
+      {
+        "id": 13,
+        "title": "Desafío 13: Crear un Efecto de Parallax",
+        "description": "Utiliza CSS para crear un efecto de parallax en una página web, donde el fondo se desplace a una velocidad diferente que el resto del contenido.",
+        "code": "/* CSS para un efecto de parallax */\n\n.parallax {\n  background-image: url('background.jpg');\n  background-attachment: fixed;\n  background-position: center;\n  background-repeat: no-repeat;\n  background-size: cover;\n  height: 100vh;\n  overflow: hidden;\n}\n\n.content {\n  padding: 20px;\n  text-align: center;\n  color: white;\n  margin-top: 50%;\n  transform: translateY(-50%);\n}"
+      },
+      {
+        "id": 14,
+        "title": "Desafío 14: Crear un Botón de Carga Animado",
+        "description": "Diseña un botón de carga animado utilizando CSS que indique visualmente que se está procesando una tarea.",
+        "code": "/* CSS para un botón de carga animado */\n\n.loader {\n  border: 16px solid #f3f3f3;\n  border-radius: 50%;\n  border-top: 16px solid #3498db;\n  width: 120px;\n  height: 120px;\n  -webkit-animation: spin 2s linear infinite;\n  animation: spin 2s linear infinite;\n}\n\n@-webkit-keyframes spin {\n  0% { -webkit-transform: rotate(0deg); }\n  100% { -webkit-transform: rotate(360deg); }\n}\n\n@keyframes spin {\n  0% { transform: rotate(0deg); }\n  100% { transform: rotate(360deg); }\n}"
+      },
+      {
+        "id": 15,
+        "title": "Desafío 15: Crear un Diseño de Tarjeta de Producto",
+        "description": "Utiliza CSS para diseñar una tarjeta de producto que muestre la imagen, el nombre, el precio y una breve descripción del producto de manera atractiva.",
+        "code": "/* CSS para un diseño de tarjeta de producto */\n\ncard {\n  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);\n  transition: 0.3s;\n  width: 300px;\n}\n\ncard:hover {\n  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);\n}\n\ncard-container {\n  padding: 2px 16px;\n}"
+      },
+      {
+        "id": 16,
+        "title": "Desafío 16: Crear un Diseño de Navbar Responsivo",
+        "description": "Utiliza CSS para diseñar una barra de navegación responsiva que se adapte a diferentes tamaños de pantalla y dispositivos.",
+        "code": "/* CSS para un diseño de navbar responsivo */\n\n.navbar {\n  overflow: hidden;\n  background-color: #333;\n}\n\n.navbar a {\n  float: left;\n  display: block;\n  color: #f2f2f2;\n  text-align: center;\n  padding: 14px 20px;\n  text-decoration: none;\n}\n\n.dropdown {\n  float: left;\n  overflow: hidden;\n}\n\n.dropdown .dropbtn {\n  font-size: 16px;\n  border: none;\n  outline: none;\n  color: white;\n  padding: 14px 16px;\n  background-color: inherit;\n  font-family: inherit;\n  margin: 0;\n}\n\n.navbar a:hover, .dropdown:hover .dropbtn {\n  background-color: #ddd;\n  color: black;\n}\n\n.dropdown-content {\n  display: none;\n  position: absolute;\n  background-color: #f9f9f9;\n  min-width: 160px;\n  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);\n  z-index: 1;\n}\n\n.dropdown-content a {\n  float: none;\n  color: black;\n  padding: 12px 16px;\n  text-decoration: none;\n  display: block;\n  text-align: left;\n}\n\n.dropdown-content a:hover {\n  background-color: #ddd;\n}\n\n.dropdown:hover .dropdown-content {\n  display: block;\n}"
+      },
+      {
+        "id": 17,
+        "title": "Desafío 17: Estilizar un Elemento de Lista de Iconos",
+        "description": "Crea un estilo CSS para una lista de iconos que muestre íconos con texto descriptivo y efectos de hover.",
+        "code": "/* CSS para estilizar una lista de iconos */\n\n.icon-list {\n  list-style-type: none;\n  margin: 0;\n  padding: 0;\n}\n\n.icon {\n  display: inline-block;\n  width: 100px;\n  text-align: center;\n}\n\n.icon img {\n  width: 50px;\n  height: 50px;\n  margin-bottom: 10px;\n}\n\n.icon:hover {\n  background-color: #f2f2f2;\n  cursor: pointer;\n}"
+      },
+      {
+        "id": 18,
+        "title": "Desafío 18: Diseñar un Footer Creativo",
+        "description": "Utiliza CSS para diseñar un footer creativo que incluya información de contacto, enlaces útiles y un diseño atractivo.",
+        "code": "/* CSS para un footer creativo */\n\n.footer {\n  background-color: #333;\n  color: white;\n  padding: 20px;\n  text-align: center;\n}\n\n.footer a {\n  color: white;\n  text-decoration: none;\n}\n\n.footer a:hover {\n  color: #ddd;\n}"
+      },
+      {
+        "id": 19,
+        "title": "Desafío 19: Crear un Diseño de Tarjeta de Perfil",
+        "description": "Diseña una tarjeta de perfil utilizando CSS que muestre la imagen del usuario, su nombre, descripción y enlaces a redes sociales.",
+        "code": "/* CSS para un diseño de tarjeta de perfil */\n\ncard {\n  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);\n  transition: 0.3s;\n  width: 300px;\n}\n\ncard:hover {\n  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);\n}\n\ncard-container {\n  padding: 2px 16px;\n}"
+      },
+      {
+        "id": 20,
+        "title": "Desafío 20: Crear un Diseño de Tablero de Tareas",
+        "description": "Utiliza CSS para diseñar un tablero de tareas que muestre una lista de tareas pendientes, en progreso y completadas con diferentes estilos.",
+        "code": "/* CSS para un diseño de tablero de tareas */\n\ntask-board {\n  display: grid;\n  grid-template-columns: repeat(3, 1fr);\n  gap: 20px;\n}\n\ntask-list {\n  background-color: #f2f2f2;\n  padding: 20px;\n  border-radius: 8px;\n}\n\ntask-list-header {\n  font-weight: bold;\n  margin-bottom: 10px;\n}\n\ntask-item {\n  background-color: #ffffff;\n  padding: 10px;\n  border-radius: 4px;\n  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1);\n  margin-bottom: 10px;\n}\n\ntask-item.done {\n  background-color: #e0f2f1;\n}\n\ntask-item.in-progress {\n  background-color: #fff9c4;\n}\n\ntask-item.pending {\n  background-color: #ffccbc;\n}"
+      }
+      
+    ]
+  }
+  
+  
+  
+  
+]

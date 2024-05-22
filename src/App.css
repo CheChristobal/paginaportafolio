@@ -1,38 +1,105 @@
-.App {
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f9;
+  margin: 0;
+  padding: 0;
+}
+
+.app-container {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+h1 {
   text-align: center;
+  color: #333;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.course-container {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: space-between;
+  margin-bottom: 20px;
 }
 
-.App-link {
-  color: #61dafb;
+.course-list, .challenge-list {
+  flex: 1;
+  background-color: #fff;
+  padding: 20px;
+  margin: 0 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.course-list ul, .challenge-list ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.course-list li, .challenge-list li {
+  padding: 10px;
+  margin: 5px 0;
+  background-color: #fafafa;
+  cursor: pointer;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+.course-list li:hover, .challenge-list li:hover {
+  background-color: #f0f0f0;
+}
+
+.editor-container {
+  flex: 2;
+  background-color: #fff;
+  padding: 20px;
+  margin: 0 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.editor-container textarea {
+  width: 100%;
+  height: 300px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 10px;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 14px;
+}
+
+button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+.columns-container {
+  display: flex;
+}
+
+.challenge-column {
+  flex: 1;
+  padding: 0 10px;
+}
+
+.columns-container {
+  display: flex;
+}
+
+.challenge-column {
+  flex: 1;
+  padding: 0 10px;
 }
